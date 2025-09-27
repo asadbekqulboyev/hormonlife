@@ -1,0 +1,24 @@
+.sums {
+  border-radius: 20px;
+  background: #1c2258;
+  gap: 29px;
+  margin-top: 17px;
+  padding: 28px 35px;
+  @media (max-width: 768px) {
+    padding: 25px;
+    gap: 15px;
+  }
+  &_title {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+    span {
+      font-weight: 400;
+    }
+  }
+}

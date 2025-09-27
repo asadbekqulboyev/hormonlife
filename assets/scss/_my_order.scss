@@ -1,0 +1,19 @@
+.my_order {
+  padding: 25px;
+  border-radius: 20px;
+  background: #fff;
+  &_name {
+    color: #1c2258;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 114.909%;
+  }
+  .order_status {
+    color: #359183;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

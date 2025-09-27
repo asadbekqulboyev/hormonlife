@@ -1,0 +1,80 @@
+.user_info {
+  border-radius: 20px;
+  background: #fff;
+  margin-top: 29px;
+  padding: 43px 35px;
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+    padding: 25px;
+  }
+  &_left {
+    @media (max-width: 992px) {
+      padding-bottom: 24px;
+    }
+    .avatar {
+      width: 126px;
+      height: 126px;
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      font-family: "Montserrat";
+      font-size: 41.354px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      background: linear-gradient(98deg, #1c2258 5.94%, #858ccf 95.66%);
+      @media (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .user_name {
+      color: #1c2258;
+      font-size: 52px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 104.59%;
+      margin-top: 20px;
+      @media (max-width: 1200px) {
+        font-size: 38px;
+      }
+      @media (max-width: 768px) {
+        font-size: 28px;
+      }
+    }
+    .user_status {
+      color: #9093ae;
+      font-family: "Raleway";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-top: 20px;
+    }
+  }
+  &_title {
+    color: #1c2258;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  &_right {
+    gap: 54px;
+    padding-left: 87px;
+    border-left: 1px solid #c9cad7;
+    @media (max-width: 1200px) {
+      padding-left: 35px;
+    }
+    @media (max-width: 992px) {
+      padding-left: 0;
+      border-left: none;
+    }
+    &_item {
+      gap: 15px;
+    }
+  }
+}
