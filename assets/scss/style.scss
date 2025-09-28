@@ -6,6 +6,7 @@
 @import "docs";
 @import "my_record";
 @import "my_order";
+@import "balance";
 * {
   margin: 0;
   padding: 0;
@@ -158,5 +159,74 @@ main {
   }
   @media (max-width: 768px) {
     width: 100%;
+  }
+}
+.custom_radio {
+  position: relative;
+  display: inline-block;
+
+  input {
+    display: none; // original radioknopkani yashiramiz
+  }
+
+  .check_dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #d9dcfa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &::after {
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #fff;
+      transition: 0.3s;
+    }
+  }
+
+  input:checked + .check_dot::after {
+    background: #1c2258;
+  }
+}
+// custom checkbox
+.custom_checkbox {
+  position: relative;
+  display: inline-block;
+
+  input {
+    display: none; // asl checkboxni yashiramiz
+  }
+
+  .checkmark {
+    width: 26px;
+    height: 26px;
+    border-radius: 6.71px;
+    background: #c1c5f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &::after {
+      content: "";
+      width: 10px;
+      height: 5px;
+      border-left: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+      transform: rotate(-45deg);
+      transition: 0.3s;
+    }
+  }
+
+  input:checked + .checkmark::after {
+    border-left-color: #1c2258;
+    border-bottom-color: #1c2258; // radio dot bilan bir xil rang
   }
 }

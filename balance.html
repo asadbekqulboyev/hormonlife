@@ -57,7 +57,8 @@
                                             d="M12.501 15.0625C14.14 15.0615 15.753 15.2543 17.3418 15.6406C18.9277 16.0262 20.4941 16.6018 22.041 17.3721V17.373C22.6301 17.6779 23.1014 18.1164 23.4648 18.708C23.8227 19.2905 24.0008 19.922 24 20.624V21.875C24 22.4673 23.8007 22.9495 23.375 23.376C22.9502 23.8015 22.4687 24.0007 21.876 24H3.125C2.53279 24 2.05117 23.8011 1.62598 23.376C1.25395 23.0039 1.05438 22.5878 1.00977 22.0918L1 21.874V20.625C1 19.9213 1.17853 19.2893 1.53613 18.708C1.85433 18.1908 2.25534 17.7902 2.74512 17.4932L2.96094 17.3721C4.50707 16.6002 6.0724 16.024 7.65723 15.6406C9.24684 15.2562 10.8611 15.0635 12.501 15.0625ZM12.5 1C13.9514 1 15.1691 1.50505 16.207 2.54297C17.2449 3.58089 17.75 4.79858 17.75 6.25C17.75 7.70142 17.2449 8.91911 16.207 9.95703C15.1691 10.9949 13.9514 11.5 12.5 11.5C11.0486 11.5 9.83089 10.9949 8.79297 9.95703C7.75505 8.91911 7.25 7.70142 7.25 6.25C7.25 4.79858 7.75505 3.58089 8.79297 2.54297C9.83089 1.50505 11.0486 1 12.5 1Z"
                                             stroke="#1C2258" stroke-width="2" />
                                     </svg>
-                                    <span>Личная информация</span></a>
+                                    <span>Личная информация</span>
+                                </a>
                             </li>
                             <li>
                                 <a href="records.html">
@@ -113,7 +114,8 @@
                                     <span>Баланс</span>
                                 </a>
                             </li>
-                            <li><a href="online-priem.html">
+                            <li>
+                                <a href="online-priem.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
                                         fill="none">
                                         <path
@@ -126,7 +128,8 @@
                                             stroke-linejoin="round" />
                                     </svg>
                                     <span>Онлайн-прием</span>
-                                </a></li>
+                                </a>
+                            </li>
                         </ul>
                         <a href="#" class="button">Записаться снова</a>
                         <a href="#" class="exity">
@@ -141,80 +144,118 @@
                     </div>
                 </div>
                 <div class="contents">
-                    <h2 class="section_title">Личная информация</h2>
-                    <div class="user_info flex between">
-                        <div class="user_info_left">
-                            <div class="avatar flex a_center center">
-                                <span>А</span>
-                            </div>
-                            <div class="user_name">
-                                Аксёнов Артур <br> Константинович
-                            </div>
-                            <div class="user_status">
-                                Пациент
+                    <h2 class="section_title">Баланс</h2>
+                    <div class="balance flex between">
+                        <!-- Balans kartasi -->
+                        <div class="balance_card">
+                            <img src="assets/images/plastic.png" alt="">
+                            <div class="balance_card-info flex between column">
+                                <div class="balance_card-title">Мой счет</div>
+                                <div class="balance_card-balance">100 000 руб.</div>
                             </div>
                         </div>
-                        <div class="user_info_right flex column">
-                            <div class="user_info_right_item flex column">
-                                <div class="user_info_title">
-                                    Дата рождения
+
+                        <div class="balance_topup flex">
+                            <div class="balance_topup_left flex column between">
+                                <div class="balance_topup-title">Пополнение баланса</div>
+                                <div class="balance_topup-input flex column">
+                                    <span class="balance_topup-input_title">Сумма</span>
+                                    <input type="number" value="1000">
+                                    <button class="flex center a_center button"><img
+                                            src="assets/images/left_btn_icon.svg" alt=""></button>
                                 </div>
-                                <div class="user_info_text">
-                                    17.07.1996
+                                <label class="balance_topup-agree flex a_center">
+                                    <div class="custom_checkbox">
+                                        <input type="checkbox" checked>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                    <span>Я соглашаюсь с <a href="#"> договором оферты</a> на пополнение баланса личного кабинета</span>
+                                </label>
+                            </div>
+                            <div class="balance_payment">
+                                <div class="balance_topup-title">Способ оплаты</div>
+                                <div class="balance_payment_radios flex column">
+                                    <label class="flex a_center">
+                                        <div class="custom_radio">
+                                            <input type="radio" name="pay" value="sbp">
+                                            <span class="check_dot"></span>
+                                        </div>
+                                        СБП
+                                    </label>
+                                    <label class="flex a_center">
+                                        <div class="custom_radio">
+                                            <input type="radio" name="pay" value="card" checked>
+                                            <span class="check_dot"></span>
+                                        </div>
+                                        Банковская карта
+                                    </label>
+                                </div>
+                                <div class="balance_payment-card flex a_center">
+                                    <img src="assets/images/card_min.svg" alt="">
+                                    <span>**** 7735</span>
                                 </div>
                             </div>
-                            <div class="user_info_right_item flex column">
-                                <div class="user_info_title">
-                                    Номер телефона
-                                </div>
-                                <div class="user_info_text">
-                                    +7 (900) 000-00-00
-                                </div>
+                        </div>
+
+                    </div>
+                    <div class="history">
+                        <h3 class="history_title flex a_center">
+                            <img src="assets/images/order_icon1.svg" alt="">
+                            <span>История транзакций</span>
+                        </h3>
+                        <div class="history_table">
+                            <div class="history_row flex between a_center">
+                                <span> <b>№</b>1034923573489239470</span>
+                                <span><b>Дата</b>13.02.2025</span>
+                                <span><b>Время</b>15:42</span>
+                                <span><b>Сумма</b>110 203 рублей</span>
+                                <span><b>Способ</b>Банк. карта</span>
                             </div>
-                            <div class="user_info_right_item flex column">
-                                <div class="user_info_title">
-                                    Номер договора
-                                </div>
-                                <div class="user_info_text">
-                                    90923840714014
-                                </div>
+                            <div class="history_row flex between a_center">
+                                <span> <b>№</b>1034923573489239470</span>
+                                <span><b>Дата</b>13.02.2025</span>
+                                <span><b>Время</b>15:42</span>
+                                <span><b>Сумма</b>110 203 рублей</span>
+                                <span><b>Способ</b>Банк. карта</span>
+                            </div>
+                            <div class="history_row flex between a_center">
+                                <span> <b>№</b>1034923573489239470</span>
+                                <span><b>Дата</b>13.02.2025</span>
+                                <span><b>Время</b>15:42</span>
+                                <span><b>Сумма</b>110 203 рублей</span>
+                                <span><b>Способ</b>Банк. карта</span>
+                            </div>
+                            <div class="history_row flex between a_center">
+                                <span> <b>№</b>1034923573489239470</span>
+                                <span><b>Дата</b>13.02.2025</span>
+                                <span><b>Время</b>15:42</span>
+                                <span><b>Сумма</b>110 203 рублей</span>
+                                <span><b>Способ</b>Банк. карта</span>
+                            </div>
+                            <div class="history_row flex between a_center">
+                                <span> <b>№</b>1034923573489239470</span>
+                                <span><b>Дата</b>13.02.2025</span>
+                                <span><b>Время</b>15:42</span>
+                                <span><b>Сумма</b>110 203 рублей</span>
+                                <span><b>Способ</b>Банк. карта</span>
+                            </div>
+                            <div class="history_row flex between a_center">
+                                <span> <b>№</b>1034923573489239470</span>
+                                <span><b>Дата</b>13.02.2025</span>
+                                <span><b>Время</b>15:42</span>
+                                <span><b>Сумма</b>110 203 рублей</span>
+                                <span><b>Способ</b>Банк. карта</span>
+                            </div>
+                            <div class="history_row flex between a_center">
+                                <span> <b>№</b>1034923573489239470</span>
+                                <span><b>Дата</b>13.02.2025</span>
+                                <span><b>Время</b>15:42</span>
+                                <span><b>Сумма</b>110 203 рублей</span>
+                                <span><b>Способ</b>Банк. карта</span>
                             </div>
                         </div>
                     </div>
-                    <div class="sums flex ">
-                        <img src="assets/images/card.svg" alt="">
-                        <div class="sums_title">
-                            Баланс: <span>100 000 руб.</span>
-                        </div>
-                    </div>
-                    <div class="documents">
-                        <h2 class="section_title sm">
-                            Мои документы
-                        </h2>
-                        <ul class="documents_items flex column">
-                            <li class="flex between a_center">
-                                <div class="documents_title">Бланк заявления на возврат денежных средств</div>
-                                <div class="flex a_center">
-                                    <img src="assets/images/download_doc.svg" alt="">
-                                    <span>Скачать</span>
-                                </div>
-                            </li>
-                            <li class="flex between a_center">
-                                <div class="documents_title">Справка для налогового вычета</div>
-                                <div class="flex a_center">
-                                    <img src="assets/images/download_doc.svg" alt="">
-                                    <span>Скачать</span>
-                                </div>
-                            </li>
-                            <li class="flex between a_center">
-                                <div class="documents_title">Договор №000000000 оказания платных медицинских услуг</div>
-                                <div class="flex a_center">
-                                    <img src="assets/images/download_doc.svg" alt="">
-                                    <span>Скачать</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
         </main>
