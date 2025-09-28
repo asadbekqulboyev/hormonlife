@@ -470,6 +470,13 @@
   background: #fff;
   border-radius: 20px;
 }
+.my_record .my_record_tab_content .tab_content_item.is_hover {
+  transition: all 0.2s linear;
+  border: 1px solid transparent;
+}
+.my_record .my_record_tab_content .tab_content_item.is_hover:hover {
+  border: 1px solid #9093ae;
+}
 .my_record .my_record_tab_content .tab_content_item_top {
   gap: 22px;
 }
@@ -499,6 +506,15 @@
   .my_record .my_record_tab_content .tab_content_item_top .my_record_profile_name {
     font-size: 16px;
   }
+}
+.my_record .my_record_tab_content .tab_content_item_top .my_record_profile_price {
+  color: #ad272b;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 114.909%;
 }
 .my_record .my_record_tab_content .tab_content_item_top .my_record_profile_status {
   color: #1c2258;
@@ -594,6 +610,9 @@
     gap: 16px;
   }
 }
+.my_record_profile_information_lists.my_list {
+  gap: 5px !important;
+}
 .my_record_profile_information_lists li {
   gap: 20px;
   color: #1c2258;
@@ -608,6 +627,9 @@
     gap: 14px;
   }
 }
+.my_record_profile_information_lists li .opacity {
+  color: #9093ae;
+}
 .my_record_profile_information_lists li img {
   width: 19px;
 }
@@ -616,6 +638,37 @@
   padding: 25px;
   border-radius: 20px;
   background: #fff;
+  width: calc(60% - 8.5px);
+  height: fit-content;
+}
+@media (max-width: 1200px) {
+  .my_order {
+    width: calc(57% - 8.5px);
+  }
+}
+@media (max-width: 1120px) {
+  .my_order {
+    width: 100%;
+    margin-top: 27px;
+  }
+}
+@media (max-width: 768px) {
+  .my_order {
+    padding: 25px;
+  }
+}
+.my_order_contents {
+  width: calc(40% - 8.5px);
+}
+@media (max-width: 1200px) {
+  .my_order_contents {
+    width: calc(43% - 8.5px);
+  }
+}
+@media (max-width: 1120px) {
+  .my_order_contents {
+    width: 100%;
+  }
 }
 .my_order_name {
   color: #1c2258;
@@ -624,12 +677,47 @@
   font-weight: 600;
   line-height: 114.909%;
 }
+.my_order_information_lists {
+  margin-top: 30px;
+  gap: 21px;
+}
+.my_order_information_lists li {
+  color: #9093ae;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  gap: 18px;
+}
+.my_order_information_lists li img {
+  width: 20px;
+}
 .my_order .order_status {
   color: #359183;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.my_order .order_status_info {
+  color: #1c2258;
+}
+.my_order_info_items {
+  margin-top: 44px;
+}
+.my_order .my_order_info_lists {
+  list-style: none;
+  gap: 13px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.my_order .my_order_info_lists li {
+  padding-bottom: 13px;
+  border-bottom: 1px solid #c9cad7;
+}
+.my_order .my_order_info_lists li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 * {

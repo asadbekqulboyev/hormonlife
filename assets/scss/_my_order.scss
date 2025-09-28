@@ -2,6 +2,27 @@
   padding: 25px;
   border-radius: 20px;
   background: #fff;
+  width: calc(60% - 8.5px);
+  height: fit-content;
+  @media (max-width: 1200px) {
+    width: calc(57% - 8.5px);
+  }
+  @media (max-width: 1120px) {
+    width: 100%;
+    margin-top: 27px;
+  }
+  @media (max-width: 768px) {
+    padding: 25px;
+  }
+  &_contents {
+    width: calc(40% - 8.5px);
+    @media (max-width: 1200px) {
+      width: calc(43% - 8.5px);
+    }
+    @media (max-width: 1120px) {
+      width: 100%;
+    }
+  }
   &_name {
     color: #1c2258;
     font-size: 24px;
@@ -9,11 +30,50 @@
     font-weight: 600;
     line-height: 114.909%;
   }
+  &_information {
+    &_lists {
+      margin-top: 30px;
+      gap: 21px;
+
+      li {
+        color: #9093ae;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        gap: 18px;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
   .order_status {
     color: #359183;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    &_info {
+      color: #1c2258;
+    }
+  }
+  &_info_items {
+    margin-top: 44px;
+  }
+  .my_order_info_lists {
+    list-style: none;
+    gap: 13px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    li {
+      padding-bottom: 13px;
+      border-bottom: 1px solid #c9cad7;
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
   }
 }

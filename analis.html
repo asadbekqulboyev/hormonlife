@@ -44,7 +44,7 @@
                         </li>
                         <img src="assets/images/breadcrumbs_icon.svg" alt="">
                         <li>
-                            <a href="#" class="active">Мой профиль</a>
+                            <a href="#" class="active">Анализы</a>
                         </li>
                     </ul>
                     <div class="sidebar_content">
@@ -60,7 +60,7 @@
                                     <span>Личная информация</span></a>
                             </li>
                             <li>
-                                <a href="records.html" class="active">
+                                <a href="records.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31"
                                         fill="none">
                                         <path
@@ -76,7 +76,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#" class="active">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27"
                                         fill="none">
                                         <path
@@ -144,7 +144,7 @@
                     <h2 class="section_title">Мои записи</h2>
                     <div class="my_record flex between">
 
-                        <div class="my_record_items">
+                        <div class="my_order_contents">
                             <div class="my_record_tab">
                                 <div class="my_record_tab_btns flex">
                                     <a href="#" data-status="1" class="my_record_tab_btn">
@@ -164,232 +164,348 @@
 
                             <div class="my_record_tab_content" id="content1">
                                 <div class="tab_content_items flex column">
-                                    <div class="tab_content_item">
-                                        <div class="tab_content_item_top flex a_center">
-                                            <img src="assets/images/user_logo.png" alt="">
-                                            <div class="my_record_profile_info">
-                                                <div class="my_record_profile_name">
-                                                    Третьякова Людмила Германновна
-                                                </div>
-                                                <span class="my_record_profile_status">
-                                                    Терапевт
-                                                </span>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
                                             </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
                                         </div>
-                                        <ul class="my_record_profile_information_lists flex column">
-                                            <li class="flex a_center"><img src="assets/images/profile_icon1.svg"
-                                                    alt="Аксёнов Артур Константинович"><span>Аксёнов Артур
-                                                    Константинович</span>
+                                        <ul class="my_record_profile_information_lists flex column my_list">
+                                            <li class="flex a_center between">
+                                                <p>Мочевина</p> <span>15/15</span>
                                             </li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon2.svg"
-                                                    alt="Приём (осмотр, консультация) врача-терапевта первичный"><span>Приём
-                                                    (осмотр, консультация) врача-терапевта первичный</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon3.svg"
-                                                    alt=""><span>13.03.2025</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon4.svg "
-                                                    alt=""><span>Москва, ул. 1905 года,
-                                                    23, помещение 1 (левое крыльцо)</span></li>
+                                            <li class="flex a_center between">
+                                                <p>Общий билирубин</p> <span></span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p class="all">Еще 13...</p> <span class="opacity">13.03.2025</span>
+                                            </li>
                                         </ul>
                                     </div>
-                                    <div class="tab_content_item">
-                                        <div class="tab_content_item_top flex a_center">
-                                            <img src="assets/images/user_logo.png" alt="">
-                                            <div class="my_record_profile_info">
-                                                <div class="my_record_profile_name">
-                                                    Третьякова Людмила Германновна
-                                                </div>
-                                                <span class="my_record_profile_status">
-                                                    Терапевт
-                                                </span>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
                                             </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
                                         </div>
                                         <ul class="my_record_profile_information_lists flex column">
-                                            <li class="flex a_center"><img src="assets/images/profile_icon1.svg"
-                                                    alt="Аксёнов Артур Константинович"><span>Аксёнов Артур
-                                                    Константинович</span>
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
                                             </li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon2.svg"
-                                                    alt="Приём (осмотр, консультация) врача-терапевта первичный"><span>Приём
-                                                    (осмотр, консультация) врача-терапевта первичный</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon3.svg"
-                                                    alt=""><span>13.03.2025</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon4.svg "
-                                                    alt=""><span>Москва, ул. 1905 года,
-                                                    23, помещение 1 (левое крыльцо)</span></li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
+                                            </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
+                                        </div>
+                                        <ul class="my_record_profile_information_lists flex column">
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
+                                            </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
+                                        </div>
+                                        <ul class="my_record_profile_information_lists flex column">
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
+                                            </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
+                                        </div>
+                                        <ul class="my_record_profile_information_lists flex column">
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="my_record_tab_content" id="content2">
                                 <div class="tab_content_items flex column">
-                                    <div class="tab_content_item">
-                                        <div class="tab_content_item_top flex a_center">
-                                            <img src="assets/images/user_logo.png" alt="">
-                                            <div class="my_record_profile_info">
-                                                <div class="my_record_profile_name">
-                                                    Третьякова Людмила Германновна2
-                                                </div>
-                                                <span class="my_record_profile_status">
-                                                    Терапевт
-                                                </span>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416 - 2
                                             </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
                                         </div>
-                                        <ul class="my_record_profile_information_lists flex column">
-                                            <li class="flex a_center"><img src="assets/images/profile_icon1.svg"
-                                                    alt="Аксёнов Артур Константинович"><span>Аксёнов Артур
-                                                    Константинович</span>
+                                        <ul class="my_record_profile_information_lists flex column my_list">
+                                            <li class="flex a_center between">
+                                                <p>Мочевина</p> <span>15/15</span>
                                             </li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon2.svg"
-                                                    alt="Приём (осмотр, консультация) врача-терапевта первичный"><span>Приём
-                                                    (осмотр, консультация) врача-терапевта первичный</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon3.svg"
-                                                    alt=""><span>13.03.2025</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon4.svg "
-                                                    alt=""><span>Москва, ул. 1905 года,
-                                                    23, помещение 1 (левое крыльцо)</span></li>
+                                            <li class="flex a_center between">
+                                                <p>Общий билирубин</p> <span></span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p class="all">Еще 13...</p> <span class="opacity">13.03.2025</span>
+                                            </li>
                                         </ul>
                                     </div>
-                                    <div class="tab_content_item">
-                                        <div class="tab_content_item_top flex a_center">
-                                            <img src="assets/images/user_logo.png" alt="">
-                                            <div class="my_record_profile_info">
-                                                <div class="my_record_profile_name">
-                                                    Третьякова Людмила Германновна
-                                                </div>
-                                                <span class="my_record_profile_status">
-                                                    Терапевт
-                                                </span>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
                                             </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
                                         </div>
                                         <ul class="my_record_profile_information_lists flex column">
-                                            <li class="flex a_center"><img src="assets/images/profile_icon1.svg"
-                                                    alt="Аксёнов Артур Константинович"><span>Аксёнов Артур
-                                                    Константинович</span>
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
                                             </li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon2.svg"
-                                                    alt="Приём (осмотр, консультация) врача-терапевта первичный"><span>Приём
-                                                    (осмотр, консультация) врача-терапевта первичный</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon3.svg"
-                                                    alt=""><span>13.03.2025</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon4.svg "
-                                                    alt=""><span>Москва, ул. 1905 года,
-                                                    23, помещение 1 (левое крыльцо)</span></li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
+                                            </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
+                                        </div>
+                                        <ul class="my_record_profile_information_lists flex column">
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
+                                            </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
+                                        </div>
+                                        <ul class="my_record_profile_information_lists flex column">
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
+                                            </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
+                                        </div>
+                                        <ul class="my_record_profile_information_lists flex column">
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="my_record_tab_content" id="content3">
                                 <div class="tab_content_items flex column">
-                                    <div class="tab_content_item">
-                                        <div class="tab_content_item_top flex a_center">
-                                            <img src="assets/images/user_logo.png" alt="">
-                                            <div class="my_record_profile_info">
-                                                <div class="my_record_profile_name">
-                                                    Третьякова Людмила Германновна3
-                                                </div>
-                                                <span class="my_record_profile_status">
-                                                    Терапевт
-                                                </span>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416 - 3
                                             </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
                                         </div>
-                                        <ul class="my_record_profile_information_lists flex column">
-                                            <li class="flex a_center"><img src="assets/images/profile_icon1.svg"
-                                                    alt="Аксёнов Артур Константинович"><span>Аксёнов Артур
-                                                    Константинович</span>
+                                        <ul class="my_record_profile_information_lists flex column my_list">
+                                            <li class="flex a_center between">
+                                                <p>Мочевина</p> <span>15/15</span>
                                             </li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon2.svg"
-                                                    alt="Приём (осмотр, консультация) врача-терапевта первичный"><span>Приём
-                                                    (осмотр, консультация) врача-терапевта первичный</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon3.svg"
-                                                    alt=""><span>13.03.2025</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon4.svg "
-                                                    alt=""><span>Москва, ул. 1905 года,
-                                                    23, помещение 1 (левое крыльцо)</span></li>
+                                            <li class="flex a_center between">
+                                                <p>Общий билирубин</p> <span></span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p class="all">Еще 13...</p> <span class="opacity">13.03.2025</span>
+                                            </li>
                                         </ul>
                                     </div>
-                                    <div class="tab_content_item">
-                                        <div class="tab_content_item_top flex a_center">
-                                            <img src="assets/images/user_logo.png" alt="">
-                                            <div class="my_record_profile_info">
-                                                <div class="my_record_profile_name">
-                                                    Третьякова Людмила Германновна
-                                                </div>
-                                                <span class="my_record_profile_status">
-                                                    Терапевт
-                                                </span>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
                                             </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
                                         </div>
                                         <ul class="my_record_profile_information_lists flex column">
-                                            <li class="flex a_center"><img src="assets/images/profile_icon1.svg"
-                                                    alt="Аксёнов Артур Константинович"><span>Аксёнов Артур
-                                                    Константинович</span>
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
                                             </li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon2.svg"
-                                                    alt="Приём (осмотр, консультация) врача-терапевта первичный"><span>Приём
-                                                    (осмотр, консультация) врача-терапевта первичный</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon3.svg"
-                                                    alt=""><span>13.03.2025</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon4.svg "
-                                                    alt=""><span>Москва, ул. 1905 года,
-                                                    23, помещение 1 (левое крыльцо)</span></li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
+                                            </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
+                                        </div>
+                                        <ul class="my_record_profile_information_lists flex column">
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
+                                            </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
+                                        </div>
+                                        <ul class="my_record_profile_information_lists flex column">
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
+                                            </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
+                                        </div>
+                                        <ul class="my_record_profile_information_lists flex column">
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="my_record_tab_content" id="content4">
                                 <div class="tab_content_items flex column">
-                                    <div class="tab_content_item">
-                                        <div class="tab_content_item_top flex a_center">
-                                            <img src="assets/images/user_logo.png" alt="">
-                                            <div class="my_record_profile_info">
-                                                <div class="my_record_profile_name">
-                                                    Третьякова Людмила Германновна4
-                                                </div>
-                                                <span class="my_record_profile_status">
-                                                    Терапевт
-                                                </span>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416 - 4
                                             </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
                                         </div>
-                                        <ul class="my_record_profile_information_lists flex column">
-                                            <li class="flex a_center"><img src="assets/images/profile_icon1.svg"
-                                                    alt="Аксёнов Артур Константинович"><span>Аксёнов Артур
-                                                    Константинович</span>
+                                        <ul class="my_record_profile_information_lists flex column my_list">
+                                            <li class="flex a_center between">
+                                                <p>Мочевина</p> <span>15/15</span>
                                             </li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon2.svg"
-                                                    alt="Приём (осмотр, консультация) врача-терапевта первичный"><span>Приём
-                                                    (осмотр, консультация) врача-терапевта первичный</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon3.svg"
-                                                    alt=""><span>13.03.2025</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon4.svg "
-                                                    alt=""><span>Москва, ул. 1905 года,
-                                                    23, помещение 1 (левое крыльцо)</span></li>
+                                            <li class="flex a_center between">
+                                                <p>Общий билирубин</p> <span></span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p class="all">Еще 13...</p> <span class="opacity">13.03.2025</span>
+                                            </li>
                                         </ul>
                                     </div>
-                                    <div class="tab_content_item">
-                                        <div class="tab_content_item_top flex a_center">
-                                            <img src="assets/images/user_logo.png" alt="">
-                                            <div class="my_record_profile_info">
-                                                <div class="my_record_profile_name">
-                                                    Третьякова Людмила Германновна
-                                                </div>
-                                                <span class="my_record_profile_status">
-                                                    Терапевт
-                                                </span>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
                                             </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
                                         </div>
                                         <ul class="my_record_profile_information_lists flex column">
-                                            <li class="flex a_center"><img src="assets/images/profile_icon1.svg"
-                                                    alt="Аксёнов Артур Константинович"><span>Аксёнов Артур
-                                                    Константинович</span>
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
                                             </li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon2.svg"
-                                                    alt="Приём (осмотр, консультация) врача-терапевта первичный"><span>Приём
-                                                    (осмотр, консультация) врача-терапевта первичный</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon3.svg"
-                                                    alt=""><span>13.03.2025</span></li>
-                                            <li class="flex a_center"><img src="assets/images/profile_icon4.svg "
-                                                    alt=""><span>Москва, ул. 1905 года,
-                                                    23, помещение 1 (левое крыльцо)</span></li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
+                                            </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
+                                        </div>
+                                        <ul class="my_record_profile_information_lists flex column">
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
+                                            </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
+                                        </div>
+                                        <ul class="my_record_profile_information_lists flex column">
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab_content_item is_hover">
+                                        <div class="tab_content_item_top flex a_center between">
+                                            <div class="my_record_profile_name">
+                                                Заказ №1029387416
+                                            </div>
+                                            <div class="my_record_profile_price">10 000 ₽</div>
+                                        </div>
+                                        <ul class="my_record_profile_information_lists flex column">
+                                            <li class="flex a_center between">
+                                                <p>Общий анализ мочи (ОАМ) </p> <span>1/1</span>
+                                            </li>
+                                            <li class="flex a_center between">
+                                                <p></p> <span class="opacity">13.03.2025</span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -404,29 +520,65 @@
                                 </div>
                             </div>
 
-                            <div class="my_record_profile_information flex column">
-                                <ul class="my_record_profile_information_lists flex column">
+                            <div class="my_order_information flex column">
+                                <ul class="my_order_information_lists flex column">
                                     <li class="flex a_center">
                                         <img src="assets/images/order_icon1.svg" alt="Статус:">
                                         <span>Статус:</span> <span class="order_status">Кол-во анализов:</span>
                                     </li>
-                                    <li class="flex a_center"><img src="assets/images/order_icon1.svg"
-                                            alt="Статус:"><span>Статус: <span
-                                                class="order_status">Завершенный</span></span>
+                                    <li class="flex a_center"><img src="assets/images/order_icon2.svg"
+                                            alt="Статус:"><span>Кол-во анализов: </span>
+                                        <span class="order_status_info">15 штук</span>
                                     </li>
-                                    <li class="flex a_center"><img src="assets/images/profile_icon2.svg"
-                                            alt="Приём (осмотр, консультация) врача-терапевта первичный"><span>Приём
-                                            (осмотр, консультация) врача-терапевта первичный</span></li>
-                                    <li class="flex a_center"><img src="assets/images/profile_icon3.svg"
-                                            alt=""><span>13.03.2025</span></li>
-                                    <li class="flex a_center"><img src="assets/images/profile_icon4.svg "
-                                            alt=""><span>Москва, ул. 1905 года,
-                                            23, помещение 1 (левое крыльцо)</span></li>
+                                    <li class="flex a_center"><img src="assets/images/order_icon3.svg" alt="Статус:">
+                                        <span>Дата оформления: </span>
+                                        <span class="order_status_info">13.03.2025</span>
+
+                                    </li>
+
+                                    <li class="flex a_center"><img src="assets/images/order_icon3.svg" alt="Статус:">
+                                        <span>Стоимость: </span>
+                                        <span class="order_status_info">10 000 ₽</span>
+                                    </li>
                                 </ul>
-                                <a href="#" class="button">
-                                    <img src="assets/images/pdf.svg" alt="">
-                                    <span>Заключение</span>
-                                </a>
+                                <div class="my_order_info_items">
+                                    <h2 class="my_order_name">Состав заказа</h2>
+                                    <ul class="my_order_info_lists flex column">
+                                        <li class="my_order_info_list">
+                                            Мультистероидный профиль (слюна)
+                                        </li>
+                                        <li class="my_order_info_list">
+                                            ТТГ, Т3 свободный, Т4 свободный
+                                        </li>
+                                        <li class="my_order_info_list">
+                                            Антитела к ТГ, ТПО, МАГ
+                                        </li>
+                                        <li class="my_order_info_list">
+                                            ЛГ, ФСГ, пролактин, ГСПГ
+                                        </li>
+                                        <li class="my_order_info_list">
+                                            ОАК с лейкоформулой, АЛТ, АСТ, ГГТ, альбумин, общий белок, гликированный
+                                            гемоглобин
+                                        </li>
+                                        <li class="my_order_info_list">
+                                            КНТЖ, ОЖСС, ферритин
+                                        </li>
+                                        <li class="my_order_info_list">
+                                            Витамин B9, B12, D3, медь, цинк
+                                        </li>
+                                        <li class="my_order_info_list">
+                                            Холестерин общий, ЛПВП, ЛПНП, триглицериды
+                                        </li>
+                                        <li class="my_order_info_list">
+                                            Мочевина, мочевая кислота, креатинин, натрий, калий, хлориды, кальций общий,
+                                            С-реактивный белок, гомоцистеин
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="button">
+                                        <img src="assets/images/pdf.svg" alt="">
+                                        <span>Результат анализа</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

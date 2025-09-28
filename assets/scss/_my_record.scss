@@ -90,6 +90,13 @@
       padding: 25px;
       background: #fff;
       border-radius: 20px;
+      &.is_hover {
+        transition: all 0.2s linear;
+        border: 1px solid transparent;
+        &:hover {
+          border: 1px solid #9093ae;
+        }
+      }
       &_top {
         gap: 22px;
         @media (max-width: 768px) {
@@ -112,6 +119,15 @@
           @media (max-width: 1200px) {
             font-size: 16px;
           }
+        }
+        .my_record_profile_price {
+          color: #ad272b;
+          text-align: right;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 114.909%;
         }
         .my_record_profile_status {
           color: #1c2258;
@@ -191,6 +207,9 @@
         @media (max-width: 768px) {
           gap: 16px;
         }
+        &.my_list {
+          gap: 5px !important;
+        }
         li {
           gap: 20px;
           color: #1c2258;
@@ -202,6 +221,10 @@
             font-size: 14px;
             gap: 14px;
           }
+          .opacity {
+            color: #9093ae;
+          }
+
           img {
             width: 19px;
           }
