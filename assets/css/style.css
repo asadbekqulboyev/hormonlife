@@ -145,6 +145,7 @@
   font-family: "Raleway";
   font-size: 20px;
   font-weight: 600;
+  position: relative;
 }
 @media (max-width: 1400px) {
   .sidebar_links a {
@@ -156,7 +157,15 @@
   width: 29px;
 }
 .sidebar_links a::before {
-  transition: all 0.5s linear;
+  content: "";
+  width: 6px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ad272b;
+  opacity: 0;
+  transition: all 0.2s ease-in;
 }
 .sidebar_links a.active, .sidebar_links a:hover {
   position: relative;
@@ -166,13 +175,7 @@
   stroke: #ad272b;
 }
 .sidebar_links a.active::before, .sidebar_links a:hover::before {
-  content: "";
-  width: 6px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #ad272b;
+  opacity: 1;
 }
 .sidebar .button {
   margin-top: 24px;
