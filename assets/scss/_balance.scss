@@ -11,7 +11,6 @@
     @media (max-width: 1200px) {
       width: 100%;
     }
-
     img {
       width: 100%;
       object-fit: cover;
@@ -85,8 +84,17 @@
         outline: none;
         border: none;
       }
+
       &-title {
         color: #1c2258;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .error {
+        gap: 7px;
+        color: #ad272b;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -129,7 +137,7 @@
     width: 40%;
     @media (max-width: 556px) {
       width: 100%;
-      border-radius:0 0 20px 20px;
+      border-radius: 0 0 20px 20px;
     }
     &_radios {
       gap: 24px;

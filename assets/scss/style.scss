@@ -7,6 +7,9 @@
 @import "my_record";
 @import "my_order";
 @import "balance";
+@import "online_priem";
+@import "online_priem_chat";
+@import "modal";
 * {
   margin: 0;
   padding: 0;
@@ -101,6 +104,7 @@ main {
   }
 }
 .button {
+  border: none;
   color: #fff;
   text-align: center;
   font-family: "Raleway";
@@ -118,6 +122,12 @@ main {
   width: 100%;
   border-radius: 25px;
   background: #ad272b;
+  outline: none;
+  @media (max-width: 556px) {
+    padding: 33px 35px;
+    font-size: 17px;
+    font-weight: 600;
+  }
 }
 
 .section_title {

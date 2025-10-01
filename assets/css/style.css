@@ -633,6 +633,24 @@
 .my_record_profile_information_lists li img {
   width: 19px;
 }
+.my_record_profile .sums_info_content {
+  gap: 25px;
+}
+.my_record_profile .sums_info_content div {
+  gap: 17px;
+  color: #1c2258;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.my_record_profile .sums_info_content div span {
+  color: #ad272b;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 .my_order {
   padding: 25px;
@@ -828,6 +846,14 @@
   font-weight: 400;
   line-height: normal;
 }
+.balance_topup-input .error {
+  gap: 7px;
+  color: #ad272b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .balance_topup-input .button {
   width: 72px;
   height: 50px;
@@ -924,6 +950,523 @@
   font-weight: 600;
 }
 
+.online_priem_form {
+  padding: 25px;
+  border-radius: 20px;
+  background: #fff;
+}
+.online_priem_form_items {
+  gap: 10px;
+}
+.online_priem_form_content {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.online_priem_form_item {
+  line-height: normal;
+  position: relative;
+}
+.online_priem_form_item .btn {
+  gap: 27px;
+  cursor: pointer;
+  padding: 18px 28px;
+  background: #edeef9;
+  color: #1c2258;
+  border-radius: 15px;
+  display: flex;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  justify-content: center;
+  text-align: center;
+}
+.online_priem_form_item:first-child .btn {
+  padding: 18px 20px 17px 14px;
+}
+.online_priem_form_item:nth-child(4) .btn, .online_priem_form_item:nth-child(5) .btn {
+  padding: 18px 59px;
+}
+.online_priem_form_item:nth-child(6) .btn {
+  padding: 18px 15px 17px;
+}
+.online_priem_form_item:last-child .btn {
+  padding: 18px 19px 17px;
+}
+.online_priem_form_item input {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.online_priem_form_item input:checked ~ .btn {
+  background: #1c2258;
+  color: #fff;
+}
+.online_priem_form_item input:checked ~ .btn ~ svg {
+  fill: #fff;
+}
+.online_priem_form_item.active svg path {
+  fill: #fff;
+}
+.online_priem_form .online_priem_searc {
+  margin-top: 16px;
+  position: relative;
+}
+.online_priem_form .online_priem_searc input {
+  padding: 26px 45px 26px 23px;
+  color: #1c2258;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.online_priem_form .online_priem_searc img {
+  position: absolute;
+  bottom: 22px;
+  right: 26px;
+  padding-left: 4px;
+  background: #edeef9;
+}
+
+.online_priem_chat {
+  width: calc(60% - 8.5px);
+}
+.online_priem_chat_btns {
+  border-radius: 20px;
+  background: #fff;
+}
+.online_priem_chat_btns a {
+  width: 100%;
+  padding: 21px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  color: #1c2258;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+}
+.online_priem_chat_btns a.active {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: #1c2258;
+}
+.online_priem_chat_display {
+  padding: 25px;
+  background: #fff;
+  border-radius: 20px;
+  margin-top: 17px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.online_priem_chat_header {
+  width: 100%;
+  background: #fff;
+}
+.online_priem_chat_header_left {
+  gap: 20px;
+}
+.online_priem_chat_header_left img {
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+}
+.online_priem_chat_header_name {
+  color: #1c2258;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 114.909%;
+}
+.online_priem_chat_header_status {
+  color: #1c2258;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+}
+.online_priem_chat_btnlists {
+  gap: 18px;
+  display: flex;
+}
+.online_priem_chat_btnlists a {
+  border-radius: 15px;
+  background: #edeef9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 74px;
+}
+.online_priem_chat_items {
+  padding-top: 20px;
+  gap: 15px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+.online_priem_chat_items::-webkit-scrollbar {
+  width: 5px;
+}
+.online_priem_chat_items::-webkit-scrollbar-thumb {
+  background: #1c2258;
+  border-radius: 10px;
+}
+.online_priem_chat_info {
+  border-radius: 15px 15px 15px 0px;
+  background: #cdd1ff;
+  position: relative;
+  padding: 14px;
+}
+.online_priem_chat_info::after {
+  width: 17.378px;
+  height: 15.723px;
+  position: absolute;
+  bottom: 0;
+  content: "";
+  z-index: 2;
+  left: -16px;
+  background: #cdd1ff;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.online_priem_chat_info .online_priem_chat_name {
+  color: #1c2258;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+.online_priem_chat_logo {
+  line-height: 0;
+}
+.online_priem_chat_item {
+  gap: 23px;
+}
+.online_priem_chat_item img {
+  width: 50px;
+  height: 50px;
+}
+.online_priem_chat_item p {
+  color: #1c2258;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.online_priem_chat .online_priem_my_chat {
+  padding: 14px;
+  border-radius: 15px 15px 0 15px;
+  background: #edeef9;
+  position: relative;
+  margin-top: 14px;
+  width: fit-content;
+  margin-right: 17px;
+  margin-left: auto;
+}
+.online_priem_chat .online_priem_my_chat_name {
+  padding-bottom: 6px;
+}
+.online_priem_chat .online_priem_my_chat::after {
+  width: 17.378px;
+  height: 15.723px;
+  position: absolute;
+  bottom: 0;
+  content: "";
+  z-index: 2;
+  right: -16px;
+  background: #edeef9;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.online_priem_chat .online_priem_my_chat p {
+  color: #1c2258;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.online_priem_chat .my_chat_form .balance_topup-input_title {
+  color: #1c2258;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: block !important;
+}
+.online_priem_chat .my_chat_form input {
+  color: #1c2258;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.online_priem_chat .online_priem_my_chat.new_msg {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+.online_priem_chat .online_priem_my_chat.new_msg.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  background: rgba(0, 0, 0, 0.4156862745);
+  backdrop-filter: blur(10px);
+  z-index: 11;
+  display: none;
+  padding: 200px 15px 0;
+}
+.modal .tab_content_item {
+  padding: 25px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #9093ae;
+  margin-top: 40px;
+}
+.modal .tab_content_item.is_hover {
+  transition: all 0.2s linear;
+  border: 1px solid transparent;
+}
+.modal .tab_content_item.is_hover:hover {
+  border: 1px solid #9093ae;
+}
+.modal .tab_content_item_top {
+  gap: 22px;
+}
+@media (max-width: 768px) {
+  .modal .tab_content_item_top {
+    gap: 15px;
+  }
+}
+.modal .tab_content_item_top img {
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+}
+.modal .tab_content_item_top .my_record_profile_name {
+  color: #1c2258;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 114.909%;
+}
+@media (max-width: 1400px) {
+  .modal .tab_content_item_top .my_record_profile_name {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1200px) {
+  .modal .tab_content_item_top .my_record_profile_name {
+    font-size: 16px;
+  }
+}
+.modal .tab_content_item_top .my_record_profile_price {
+  color: #ad272b;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 114.909%;
+}
+.modal .tab_content_item_top .my_record_profile_status {
+  color: #1c2258;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 16px;
+  display: block;
+}
+.modal .tab_content_item .my_record_profile_information_lists {
+  gap: 18px;
+  margin-top: 40px;
+}
+.modal_exit {
+  cursor: pointer;
+  position: absolute;
+  right: 28px;
+  top: 35px;
+  background: #fff;
+  border-radius: 50%;
+}
+.modal_content {
+  border-radius: 30px;
+  background: #fff;
+  padding: 38px 43px 37px;
+  max-width: 647px;
+  margin: auto 0;
+  position: absolute;
+  height: fit-content;
+  max-height: calc(100dvh - 100px);
+  inset: 0;
+  overflow-y: auto;
+  margin: auto;
+}
+.modal_content::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 768px) {
+  .modal_content {
+    padding: 30px 20px;
+    width: calc(100% - 30px);
+  }
+}
+.modal_content .schet_card {
+  padding: 15px 19px 18px 19px;
+  border-radius: 20px;
+  background: #f9eeee;
+  margin-top: 14px;
+}
+@media (max-width: 556px) {
+  .modal_content .schet_card {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 14px;
+  }
+}
+.modal_content .schet_card_left {
+  gap: 20px;
+}
+.modal_content .schet_card_left_title {
+  color: #1c2258;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.modal_content .schet_card_left_price {
+  color: #1c2258;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 7px;
+  line-height: normal;
+}
+.modal_content .schet_card_right_title {
+  color: #ad272b;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 556px) {
+  .modal_content .schet_card_right_title {
+    text-align: left;
+  }
+}
+.modal_content .schet_card_right_balance {
+  color: #ad272b;
+  text-align: right;
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: underline;
+  margin-top: 7px;
+}
+@media (max-width: 556px) {
+  .modal_content .schet_card_right_balance {
+    text-align: left;
+  }
+}
+.modal_content .schet_card img {
+  width: 107px;
+  height: 70.801px;
+}
+.modal_title {
+  color: #1c2258;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (max-width: 768px) {
+  .modal_title {
+    font-size: 26px;
+  }
+}
+.modal_sums {
+  color: #1c2258;
+  font-size: 26.899px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 22px;
+}
+.modal_sums_left {
+  gap: 28px;
+}
+.modal_sums_right {
+  color: #1c2258;
+  font-size: 26.899px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.modal .order_hormone {
+  margin-top: 40px;
+}
+@media (max-width: 556px) {
+  .modal .order_hormone {
+    padding: 27px 30px;
+  }
+}
+.modal .balance_topup-input {
+  margin-top: 40px;
+}
+.modal .balance_topup-input input {
+  padding: 28px 26px 25px;
+}
+.modal .balance_payment {
+  gap: 29px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 52px;
+}
+.modal_bottom_checkbox {
+  gap: 13px;
+  color: #1c2258;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 31px;
+}
+.modal_bottom_checkbox a {
+  color: #1c2258;
+  text-decoration: underline;
+}
+.modal #modal_content3 h2 {
+  color: #1c2258;
+  font-family: "Raleway";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  padding-top: 240px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1017,6 +1560,7 @@ main {
 }
 
 .button {
+  border: none;
   color: #fff;
   text-align: center;
   font-family: "Raleway";
@@ -1034,6 +1578,14 @@ main {
   width: 100%;
   border-radius: 25px;
   background: #ad272b;
+  outline: none;
+}
+@media (max-width: 556px) {
+  .button {
+    padding: 33px 35px;
+    font-size: 17px;
+    font-weight: 600;
+  }
 }
 
 .section_title {

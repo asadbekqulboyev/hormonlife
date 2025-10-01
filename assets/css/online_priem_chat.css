@@ -1,0 +1,19 @@
+.online_priem_chat_btns a {
+  display: none;
+  width: 100%;
+  padding: 21px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  color: #1c2258;
+  text-align: center;
+}
+.online_priem_chat_btns a.active {
+  background: #1c2258;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}/*# sourceMappingURL=online_priem_chat.css.map */

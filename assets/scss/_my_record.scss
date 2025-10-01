@@ -145,6 +145,7 @@
       }
     }
   }
+
   &_profile {
     padding: 25px;
     border-radius: 20px;
@@ -228,6 +229,24 @@
           img {
             width: 19px;
           }
+        }
+      }
+    }
+    .sums_info_content {
+      gap: 25px;
+      div {
+        gap: 17px;
+        color: #1c2258;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        span {
+          color: #ad272b;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
         }
       }
     }
