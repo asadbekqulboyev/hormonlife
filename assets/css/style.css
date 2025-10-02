@@ -1034,6 +1034,17 @@
 .online_priem_chat {
   width: calc(60% - 8.5px);
 }
+@media (max-width: 1200px) {
+  .online_priem_chat {
+    width: calc(57% - 8.5px);
+  }
+}
+@media (max-width: 1120px) {
+  .online_priem_chat {
+    width: 100%;
+    margin-top: 17px;
+  }
+}
 .online_priem_chat_btns {
   border-radius: 20px;
   background: #fff;
@@ -1076,10 +1087,27 @@
 .online_priem_chat_header_left {
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .online_priem_chat_header_left {
+    gap: 10px;
+  }
+}
 .online_priem_chat_header_left img {
   width: 79px;
   height: 79px;
   border-radius: 50%;
+}
+@media (max-width: 992px) {
+  .online_priem_chat_header_left img {
+    width: 65px;
+    height: 65px;
+  }
+}
+@media (max-width: 768px) {
+  .online_priem_chat_header_left img {
+    width: 50px;
+    height: 50px;
+  }
 }
 .online_priem_chat_header_name {
   color: #1c2258;
@@ -1087,6 +1115,19 @@
   font-style: normal;
   font-weight: 600;
   line-height: 114.909%;
+}
+@media (max-width: 992px) {
+  .online_priem_chat_header_name {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .online_priem_chat_header_name {
+    font-size: 14px;
+  }
+  .online_priem_chat_header_name br {
+    display: none;
+  }
 }
 .online_priem_chat_header_status {
   color: #1c2258;
@@ -1100,6 +1141,11 @@
   gap: 18px;
   display: flex;
 }
+@media (max-width: 768px) {
+  .online_priem_chat_btnlists {
+    gap: 10px;
+  }
+}
 .online_priem_chat_btnlists a {
   border-radius: 15px;
   background: #edeef9;
@@ -1108,6 +1154,18 @@
   align-items: center;
   width: 80px;
   height: 74px;
+}
+@media (max-width: 992px) {
+  .online_priem_chat_btnlists a {
+    width: 70px;
+    height: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .online_priem_chat_btnlists a {
+    width: 52px;
+    height: 49px;
+  }
 }
 .online_priem_chat_logo {
   line-height: 0;
@@ -1549,182 +1607,6 @@
     padding: 34px 0 37px;
     height: 50%;
   }
-}
-@media (max-width: 768px) {
-  .modal#select_appanent_modal {
-    padding-top: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .modal#select_appanent_modal .modal_chat_content {
-    max-height: calc(100dvh - 30px);
-    overflow-y: auto;
-  }
-}
-.modal#select_appanent_modal .modal_chat_content::-webkit-scrollbar {
-  display: none;
-}
-.modal .chatbot_ai {
-  display: none;
-}
-.modal .chatbot_ai .modal_exit {
-  background: none;
-}
-@media (max-width: 768px) {
-  .modal .chatbot_ai {
-    padding: 0 20px 41px 20px;
-  }
-}
-@media (max-width: 768px) {
-  .modal .chatbot_ai .chatbot_ai_wrapper {
-    width: 200%;
-    margin: auto;
-    flex: 0 0 auto;
-  }
-}
-.modal .chatbot_ai_buttons {
-  display: none;
-}
-@media (max-width: 768px) {
-  .modal .chatbot_ai_buttons {
-    display: flex;
-    border-radius: 15px;
-    border: 1px solid #1c2258;
-    margin-top: 80px;
-    justify-content: space-between;
-  }
-}
-@media (max-width: 768px) {
-  .modal .chatbot_ai_buttons a {
-    color: #1c2258;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    padding: 18px 30px;
-    line-height: normal;
-    border-radius: 15px;
-    text-align: center;
-    text-decoration: none;
-  }
-}
-.modal .chatbot_ai_buttons a.active {
-  color: #fff;
-  background: #ad272b;
-  transform: scale(1.1);
-}
-.modal .chatbot_ai .modal_title {
-  font-weight: 600;
-  margin-top: 31px;
-}
-.modal .chatbot_ai .modal_text {
-  margin-top: 34px;
-  text-align: center;
-}
-@media (max-width: 768px) {
-  .modal .chatbot_ai_content {
-    overflow-x: auto;
-  }
-}
-.modal .chatbot_ai_content_left {
-  width: 56%;
-  padding: 56px 40px 50px 50px;
-}
-@media (max-width: 1200px) {
-  .modal .chatbot_ai_content_left {
-    padding: 50px 35px 50px 35px;
-    width: 55%;
-  }
-}
-@media (max-width: 768px) {
-  .modal .chatbot_ai_content_left {
-    width: 100%;
-    padding: 30px 15px 30px 15px;
-  }
-}
-.modal .chatbot_ai_content_left .online_priem_chat_logo {
-  width: 66px;
-  height: 66px;
-  border-radius: 50%;
-  background: #f9eeee;
-}
-.modal .chatbot_ai_content_left .online_priem_chat_logo img {
-  width: 25px;
-}
-.modal .chatbot_ai_content_left .online_priem_chat_info {
-  background: #f9eeee;
-}
-.modal .chatbot_ai_content_left .online_priem_chat_info::after {
-  background: #f9eeee;
-}
-.modal .chatbot_ai_content_left .online_priem_chat_info .online_priem_chat_name {
-  color: #ad272b;
-}
-.modal .chatbot_ai_content_left .balance_topup-input .button {
-  bottom: 13px;
-}
-.modal .chatbot_ai_content_left .modal_title {
-  text-align: center;
-}
-@media (max-width: 1200px) {
-  .modal .chatbot_ai_content_left .modal_title {
-    font-size: 28px;
-  }
-}
-@media (max-width: 1200px) {
-  .modal .chatbot_ai_content_left .modal_title br {
-    display: none;
-  }
-}
-.modal .chatbot_ai_content_right {
-  width: 44%;
-  border-radius: 0 35px 35px 0;
-  background: #ebebf0;
-  padding: 43px 40px 50px;
-  width: 100%;
-}
-@media (max-width: 1200px) {
-  .modal .chatbot_ai_content_right {
-    padding: 43px 35px 43px 35px;
-    width: 45%;
-  }
-}
-@media (max-width: 768px) {
-  .modal .chatbot_ai_content_right {
-    background: #fbf3f3;
-    width: 100%;
-  }
-}
-.modal .chatbot_ai_content_right .modal_exit {
-  background: #ebebf0;
-}
-.modal .chatbot_ai_content_right p {
-  margin-top: 23px;
-}
-.modal .chatbot_ai_content_right .button {
-  font-size: 18px;
-}
-@media (max-width: 1224px) {
-  .modal .chatbot_ai_content_right .button {
-    padding: 33px 51px;
-  }
-}
-@media (max-width: 1024px) {
-  .modal .chatbot_ai_content_right .button {
-    padding: 33px 41px;
-  }
-}
-.modal .chatbot_ai_content_right .button.blues {
-  margin-bottom: 17px;
-}
-.modal .chatbot_ai_dispaly {
-  width: 100%;
-}
-.modal .chatbot_ai_dispaly .online_priem_chat_display {
-  width: 100%;
-  padding: 0;
-}
-.modal .doctors_chats {
-  display: none;
 }
 
 * {
