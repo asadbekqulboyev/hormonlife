@@ -123,6 +123,11 @@ main {
   border-radius: 25px;
   background: #ad272b;
   outline: none;
+  &.blues {
+    border-radius: 15px;
+    background: rgba(28, 34, 88, 0.13);
+    color: #1c2258;
+  }
   @media (max-width: 556px) {
     padding: 33px 35px;
     font-size: 17px;

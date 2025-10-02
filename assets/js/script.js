@@ -157,7 +157,7 @@ $(document).ready(function () {
     sendMessage();
   });
 
-  // Enter bosilganda ham yuborish
+  // chat sms send
   $(document).on("keydown", "#my_chat_input", function (e) {
     if (e.key === "Enter") {
       if (e.shiftKey) {
@@ -170,8 +170,6 @@ $(document).ready(function () {
       }
     }
   });
-
-  // Yuborish funksiyasi
   function sendMessage() {
     let msg = $("#my_chat_input").val().trim();
 
@@ -202,4 +200,26 @@ $(document).ready(function () {
       );
     }
   }
+  $(".chatbot_ai_buttons a").on("click", function (e) {
+    e.preventDefault();
+    $(".chatbot_ai_buttons a").removeClass("active");
+    $(this).addClass("active");
+    var index = $(this).data("mobile");
+    $(".chatbot_ai_wrapper").css(
+      "transform",
+      "translateX(-" + index * 100 + "%)"
+    );
+  });
+  $(".chatgpt").click(function (e) {
+    e.preventDefault();
+    $(".selected_chats").fadeOut(0);
+    $(".doctors_chats").fadeOut(0);
+    $(".chatbot_ai").fadeIn();
+  });
+  $(".doctors_chat").click(function (e) {
+    e.preventDefault();
+    $(".selected_chats").fadeOut(0);
+    $(".chatbot_ai").fadeOut(0);
+    $(".doctors_chats").fadeIn();
+  });
 });
