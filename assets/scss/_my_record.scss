@@ -175,6 +175,10 @@
           width: 100px;
           height: 100px;
         }
+        @media (max-width: 768px) {
+          width: 79px;
+          height: 79px;
+        }
       }
     }
     &_name {
@@ -185,6 +189,9 @@
       line-height: 114.909%;
       @media (max-width: 1200px) {
         font-size: 20px;
+      }
+      @media (max-width: 768px) {
+        font-size: 16px;
       }
     }
     &_status {
@@ -247,6 +254,15 @@
           font-style: normal;
           font-weight: 500;
           line-height: normal;
+        }
+      }
+    }
+    .button {
+      @media (max-width: 768px) {
+        font-size: 14px;
+        padding: 22px 14px;
+        span {
+          font-size: 14px;
         }
       }
     }

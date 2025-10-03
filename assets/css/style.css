@@ -118,6 +118,82 @@
   }
 }
 
+.sidebar_hamburger {
+  display: none;
+  transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+@media (max-width: 768px) {
+  .sidebar_hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    z-index: 333;
+    margin-bottom: -20px;
+    gap: 5px;
+    margin-top: 15px;
+    width: fit-content;
+    cursor: pointer;
+    background: #fff;
+    padding: 10px 11px;
+    border-radius: 0px 8px 8px 0;
+    margin-left: -20px;
+    transition: all 0.3s linear;
+  }
+}
+.sidebar_hamburger span {
+  transition: all 0.3s linear;
+}
+.sidebar_hamburger.active {
+  position: fixed;
+  top: 15px;
+  right: 18px;
+  width: 39px;
+  height: 39px;
+  border-radius: 0;
+}
+.sidebar_hamburger.active span {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+.sidebar_hamburger.active span:first-child {
+  transform: rotate(45deg);
+}
+.sidebar_hamburger.active span:last-child {
+  transform: rotate(-45deg);
+}
+.sidebar_hamburger.active span:nth-child(2) {
+  display: none;
+}
+.sidebar_hamburger span {
+  width: 30px;
+  height: 3px;
+  background: #1c2258;
+  border-radius: 10px;
+  display: block;
+}
+.sidebar_content {
+  transition: all 0.14s linear;
+}
+@media (max-width: 768px) {
+  .sidebar_content {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.5882352941);
+    z-index: 222;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    backdrop-filter: blur(39px);
+    top: 0;
+    padding: 30px 15px;
+  }
+}
+.sidebar_content.active {
+  left: 0;
+}
 .sidebar_links {
   border-radius: 20px;
   background: #fff;
@@ -198,6 +274,11 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+@media (max-width: 768px) {
+  .sidebar .exity {
+    font-size: 18px;
+  }
 }
 
 .user_info {
@@ -574,6 +655,12 @@
     height: 100px;
   }
 }
+@media (max-width: 768px) {
+  .my_record_profile_top img {
+    width: 79px;
+    height: 79px;
+  }
+}
 .my_record_profile_name {
   color: #1c2258;
   font-size: 32px;
@@ -584,6 +671,11 @@
 @media (max-width: 1200px) {
   .my_record_profile_name {
     font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .my_record_profile_name {
+    font-size: 16px;
   }
 }
 .my_record_profile_status {
@@ -653,6 +745,15 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+@media (max-width: 768px) {
+  .my_record_profile .button {
+    font-size: 14px;
+    padding: 22px 14px;
+  }
+  .my_record_profile .button span {
+    font-size: 14px;
+  }
 }
 
 .my_order {
@@ -1062,6 +1163,11 @@
   background: #fff;
   border-radius: 20px;
 }
+@media (max-width: 768px) {
+  .online_priem_chat_btns a {
+    font-size: 14px;
+  }
+}
 .online_priem_chat_btns a.active {
   color: #fff;
   font-size: 18px;
@@ -1069,6 +1175,11 @@
   font-weight: 600;
   line-height: normal;
   background: #1c2258;
+}
+@media (max-width: 768px) {
+  .online_priem_chat_btns a.active {
+    font-size: 14px;
+  }
 }
 .online_priem_chat_display {
   padding: 25px;
@@ -1136,6 +1247,12 @@
   font-weight: 400;
   line-height: normal;
   margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .online_priem_chat_header_status {
+    font-size: 14px;
+    margin-top: 4px;
+  }
 }
 .online_priem_chat_btnlists {
   gap: 18px;

@@ -23,7 +23,9 @@
       text-align: center;
       background: #fff;
       border-radius: 20px;
-
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
       &.active {
         color: #fff;
         font-size: 18px;
@@ -31,6 +33,9 @@
         font-weight: 600;
         line-height: normal;
         background: #1c2258;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -89,6 +94,10 @@
       font-weight: 400;
       line-height: normal;
       margin-top: 10px;
+      @media (max-width: 768px) {
+        font-size: 14px;
+        margin-top: 4px;
+      }
     }
   }
   &_btnlists {
