@@ -34,6 +34,14 @@
         color: #ad272b;
         gap: 9px;
       }
+      a {
+        text-decoration: none;
+        transition: all 0.2s linear;
+        &:hover {
+          text-decoration: underline;
+          color: #e73339;
+        }
+      }
     }
   }
 }

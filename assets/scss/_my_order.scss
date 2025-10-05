@@ -61,6 +61,12 @@
   }
   &_info_items {
     margin-top: 44px;
+    .button {
+      @media (max-width: 768px) {
+        padding: 24px 30px;
+        font-size: 16px;
+      }
+    }
   }
   .my_order_info_lists {
     list-style: none;

@@ -29,6 +29,7 @@
       border-radius: 15px;
       background: #fff;
       position: relative;
+      transition: all 0.2s linear;
       @media (max-width: 992px) {
         width: 60px;
         height: 60px;
@@ -48,6 +49,9 @@
           top: 18px;
           right: 17px;
         }
+      }
+      &:hover {
+        box-shadow: 0 0 10px #a6a5a5;
       }
     }
   }
@@ -69,6 +73,10 @@
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+      transition: all 0.2s linear;
+      &:hover {
+        box-shadow: 0 0 10px #a6a5a5;
+      }
       @media (max-width: 992px) {
         width: 250px;
         height: 60px;

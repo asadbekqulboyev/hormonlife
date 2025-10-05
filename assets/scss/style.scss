@@ -123,10 +123,21 @@ main {
   border-radius: 25px;
   background: #ad272b;
   outline: none;
+  transition: all 0.3s linear;
+  &:hover {
+    background: #ff0000;
+    opacity: 0.8;
+  }
   &.blues {
     border-radius: 15px;
     background: rgba(28, 34, 88, 0.13);
     color: #1c2258;
+    transition: all 0.3s linear;
+    &:hover {
+      background: #1c2258;
+      color: #fff;
+      opacity: 0 !important;
+    }
   }
   @media (max-width: 556px) {
     padding: 33px 35px;

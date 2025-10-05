@@ -34,6 +34,7 @@
   border-radius: 15px;
   background: #fff;
   position: relative;
+  transition: all 0.2s linear;
 }
 @media (max-width: 992px) {
   .header_right a {
@@ -59,6 +60,9 @@
     right: 17px;
   }
 }
+.header_right a:hover {
+  box-shadow: 0 0 10px #a6a5a5;
+}
 .header_form {
   position: relative;
 }
@@ -78,6 +82,10 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  transition: all 0.2s linear;
+}
+.header_form input:hover {
+  box-shadow: 0 0 10px #a6a5a5;
 }
 @media (max-width: 992px) {
   .header_form input {
@@ -137,9 +145,10 @@
     width: fit-content;
     cursor: pointer;
     background: #fff;
-    padding: 10px 11px;
-    border-radius: 0px 8px 8px 0;
-    margin-left: -20px;
+    padding: 14px 11px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
     transition: all 0.3s linear;
   }
 }
@@ -149,10 +158,10 @@
 .sidebar_hamburger.active {
   position: fixed;
   top: 15px;
-  right: 18px;
-  width: 39px;
-  height: 39px;
-  border-radius: 0;
+  right: 15.5px;
+  width: 49px;
+  height: 49px;
+  border-radius: 8px 8px 0 0;
 }
 .sidebar_hamburger.active span {
   position: absolute;
@@ -208,6 +217,7 @@
 @media (max-width: 768px) {
   .sidebar_links {
     margin-top: 25px;
+    gap: 8px;
   }
 }
 .sidebar_links a {
@@ -261,6 +271,11 @@
 @media (max-width: 1400px) {
   .sidebar .button {
     padding: 33px 41px;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar .button {
+    padding: 24px 35px;
   }
 }
 .sidebar .exity {
@@ -449,6 +464,14 @@
 .documents_items li .flex {
   color: #ad272b;
   gap: 9px;
+}
+.documents_items li a {
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+.documents_items li a:hover {
+  text-decoration: underline;
+  color: #e73339;
 }
 
 .my_record {
@@ -826,6 +849,12 @@
 }
 .my_order_info_items {
   margin-top: 44px;
+}
+@media (max-width: 768px) {
+  .my_order_info_items .button {
+    padding: 24px 30px;
+    font-size: 16px;
+  }
 }
 .my_order .my_order_info_lists {
   list-style: none;
@@ -1861,11 +1890,22 @@ main {
   border-radius: 25px;
   background: #ad272b;
   outline: none;
+  transition: all 0.3s linear;
+}
+.button:hover {
+  background: #ff0000;
+  opacity: 0.8;
 }
 .button.blues {
   border-radius: 15px;
   background: rgba(28, 34, 88, 0.13);
   color: #1c2258;
+  transition: all 0.3s linear;
+}
+.button.blues:hover {
+  background: #1c2258;
+  color: #fff;
+  opacity: 0 !important;
 }
 @media (max-width: 556px) {
   .button {
