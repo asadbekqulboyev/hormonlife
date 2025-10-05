@@ -1187,7 +1187,7 @@
   border-radius: 20px;
   margin-top: 17px;
   height: 100%;
-  display: flex;
+  display: none;
   justify-content: space-between;
   flex-direction: column;
 }
@@ -1286,6 +1286,10 @@
 }
 .online_priem_chat_logo {
   line-height: 0;
+}
+.online_priem_chat .my_record_profile {
+  width: 100%;
+  margin-top: 17px;
 }
 
 .online_priem_chat_item {

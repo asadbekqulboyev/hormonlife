@@ -7,7 +7,6 @@
     width: 100%;
     margin-top: 17px;
   }
-
   &_btns {
     border-radius: 20px;
     background: #fff;
@@ -45,7 +44,7 @@
     border-radius: 20px;
     margin-top: 17px;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: space-between;
     flex-direction: column;
   }
@@ -124,14 +123,16 @@
       }
     }
   }
-
   &_logo {
     line-height: 0;
+  }
+  .my_record_profile {
+    width: 100%;
+    margin-top: 17px;
   }
 }
 .online_priem_chat_item {
   gap: 23px;
-
   img {
     width: 50px;
     height: 50px;
@@ -235,7 +236,6 @@
   transform: translateY(20px);
   transition: all 0.3s ease;
 }
-
 .online_priem_my_chat.new_msg.show {
   opacity: 1;
   transform: translateY(0);

@@ -109,7 +109,6 @@ $(document).ready(function () {
     });
   }
   modalQuiz();
-
   $(".modal_open").on("click", function (e) {
     e.preventDefault();
     $(".modal").fadeIn();
@@ -171,6 +170,16 @@ $(document).ready(function () {
         sendMessage();
       }
     }
+  });
+  $(".online_priem_chat_btn").click(function (e) {
+    e.preventDefault();
+    $(".online_priem_chat_btn").removeClass("active");
+    $(this).addClass("active");
+    $(".online_priem_chat_display").hide();
+    $(".my_record_profile").hide();
+    $("#" + $(this).data("href"))
+      .fadeIn()
+      .css("display", "flex");
   });
   function sendMessage() {
     let msg = $("#my_chat_input").val().trim();
