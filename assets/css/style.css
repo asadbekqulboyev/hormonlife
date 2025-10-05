@@ -1172,7 +1172,10 @@
   font-weight: 500;
   line-height: normal;
 }
-.online_priem_form .online_priem_searc img {
+.online_priem_form .online_priem_searc button {
+  border: 0;
+  cursor: pointer;
+  outline: none;
   position: absolute;
   bottom: 22px;
   right: 26px;

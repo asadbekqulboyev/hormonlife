@@ -107,13 +107,24 @@
       font-weight: 500;
       line-height: normal;
     }
-    img {
+    button {
+      border: 0;
+      cursor: pointer;
+      outline: none;
       position: absolute;
       bottom: 22px;
       right: 26px;
       padding-left: 4px;
       background: #edeef9;
     }
+
+    // img {
+    //   position: absolute;
+    //   bottom: 22px;
+    //   right: 26px;
+    //   padding-left: 4px;
+    //   background: #edeef9;
+    // }
   }
   // .radios2 {
   //   margin-top: 10px;
