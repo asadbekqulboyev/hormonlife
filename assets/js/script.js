@@ -139,21 +139,6 @@ $(document).ready(function () {
       validateForm();
     });
   });
-  $(document).on(
-    "change",
-    ".online_priem_form_item input[type='radio']",
-    function () {
-      // Avval hamma itemlardan active classni olib tashlaymiz
-      $(".online_priem_form_item").removeClass("active");
-
-      // Endi barcha radio inputlarni tekshiramiz
-      $(".online_priem_form_item input[type='radio']").each(function () {
-        if ($(this).is(":checked")) {
-          $(this).closest(".online_priem_form_item").addClass("active");
-        }
-      });
-    }
-  );
   // Tugma bosilganda yuborish
   $(document).on("click", "#send_btn", function (e) {
     e.preventDefault();
@@ -211,4 +196,64 @@ $(document).ready(function () {
       );
     }
   }
+});
+$(document).ready(function () {
+  // === Sana tanlash ===
+  $("#dates").flatpickr({
+    enableTime: false,
+    dateFormat: "Y-m-d",
+    onChange: function (selectedDates, dateStr, instance) {
+      const $input = $(instance.element);
+      const name = $input.attr("name");
+      const $group = $("input[name='" + name + "']");
+
+      // Shu guruhdagi barcha elementlardan active olib tashlaymiz
+      $group.each(function () {
+        const $parent = $(this).closest(".online_priem_form_item");
+        $parent.removeClass("active").find(".btn").removeClass("active");
+      });
+
+      // Shu input uchun active qo‘shamiz
+      const $parent = $input.closest(".online_priem_form_item");
+      $parent.addClass("active").find(".btn").addClass("active");
+    },
+  });
+
+  // === Soat tanlash ===
+  $("#times").flatpickr({
+    enableTime: true,
+    noCalendar: true,
+    dateFormat: "H:i",
+    onChange: function (selectedDates, dateStr, instance) {
+      const $input = $(instance.element);
+      const name = $input.attr("name");
+      const $group = $("input[name='" + name + "']");
+
+      // Shu guruhdagi barcha elementlardan active olib tashlaymiz
+      $group.each(function () {
+        const $parent = $(this).closest(".online_priem_form_item");
+        $parent.removeClass("active").find(".btn").removeClass("active");
+      });
+
+      // Shu input uchun active qo‘shamiz
+      const $parent = $input.closest(".online_priem_form_item");
+      $parent.addClass("active").find(".btn").addClass("active");
+    },
+  });
+
+  // === Radio uchun umumiy hodisa ===
+  $(document).on("change", "input[type='radio']", function () {
+    const name = $(this).attr("name");
+    const $group = $("input[name='" + name + "']");
+
+    // Shu guruhdagi barcha elementlardan active olib tashlaymiz
+    $group.each(function () {
+      const $parent = $(this).closest(".online_priem_form_item");
+      $parent.removeClass("active").find(".btn").removeClass("active");
+    });
+
+    // Tanlangan radio uchun active qo‘shamiz
+    const $parent = $(this).closest(".online_priem_form_item");
+    $parent.addClass("active").find(".btn").addClass("active");
+  });
 });

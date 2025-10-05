@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мои записи</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -161,7 +162,7 @@
                                         <span class="btn">Сегодня</span>
                                     </label>
                                     <label class="online_priem_form_item  flex a_center center">
-                                        <input type="radio" name="radio1">
+                                        <input type="date" name="radio1" id="dates">
                                         <span class="btn flex a_center center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
                                                 viewBox="0 0 19 19" fill="none">
@@ -187,7 +188,7 @@
                                         <span class="btn"> Любое время</span>
                                     </label>
                                     <label class="online_priem_form_item  flex a_center center">
-                                        <input type="radio" name="radio3">
+                                        <input type="time" name="radio3" id="times">
                                         <span class="btn">
                                             <span>
                                                 Выбрать время
@@ -272,10 +273,9 @@
                         </div>
                         <div class="online_priem_chat flex column">
                             <div class="online_priem_chat_btns flex a_center">
-                                <a class="online_priem_chat_btn active" data-href="my_record_profile2"
-                                    href="#">Выбор доктора</a>
-                                <a class="online_priem_chat_btn" data-href="chat_display2"
-                                    href="#">Онлайн-прием</a>
+                                <a class="online_priem_chat_btn active" data-href="my_record_profile2" href="#">Выбор
+                                    доктора</a>
+                                <a class="online_priem_chat_btn" data-href="chat_display2" href="#">Онлайн-прием</a>
                             </div>
                             <div class="my_record_profile flex column" id="my_record_profile2">
                                 <div class="my_record_profile_top flex a_center">
@@ -507,6 +507,7 @@
     </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

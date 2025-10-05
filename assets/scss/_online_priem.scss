@@ -30,7 +30,18 @@
       justify-content: center;
       text-align: center;
     }
-
+    &:nth-child(3) {
+      &.active {
+        .btn {
+          color: #fff;
+          border: 1px solid #1c2258;
+          border-radius: 15px;
+        }
+        svg path {
+          fill: #1c2258;
+        }
+      }
+    }
     &:first-child {
       .btn {
         padding: 18px 20px 17px 14px;
@@ -40,6 +51,10 @@
     &:nth-child(5) {
       .btn {
         padding: 18px 59px;
+        &.active {
+          background: #ad272b;
+          color: #fff;
+        }
       }
     }
     &:nth-child(6) {
@@ -49,7 +64,16 @@
     }
     &:last-child {
       .btn {
-        padding: 18px 19px 17px;
+        padding: 18px 18px 17px;
+      }
+      &.active {
+        .btn {
+          border: 1px solid #1c2258;
+          border-radius: 15px;
+        }
+        svg path {
+          fill: #1c2258;
+        }
       }
     }
     input {
