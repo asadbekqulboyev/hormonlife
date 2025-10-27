@@ -201,7 +201,7 @@ $(document).ready(function () {
   // === Sana tanlash ===
   $("#dates").flatpickr({
     enableTime: false,
-    locale: "ru", // shu tilda bo‘ladi
+    locale: "ru",
     dateFormat: "Y-m-d",
     onChange: function (selectedDates, dateStr, instance) {
       const $input = $(instance.element);
