@@ -201,19 +201,18 @@ $(document).ready(function () {
   // === Sana tanlash ===
   $("#dates").flatpickr({
     enableTime: false,
+    locale: "ru", // shu tilda bo‘ladi
     dateFormat: "Y-m-d",
     onChange: function (selectedDates, dateStr, instance) {
       const $input = $(instance.element);
       const name = $input.attr("name");
       const $group = $("input[name='" + name + "']");
 
-      // Shu guruhdagi barcha elementlardan active olib tashlaymiz
       $group.each(function () {
         const $parent = $(this).closest(".online_priem_form_item");
         $parent.removeClass("active").find(".btn").removeClass("active");
       });
 
-      // Shu input uchun active qo‘shamiz
       const $parent = $input.closest(".online_priem_form_item");
       $parent.addClass("active").find(".btn").addClass("active");
     },
