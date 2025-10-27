@@ -1,268 +1,270 @@
-.my_record {
-  margin-top: 29px;
-  @media (max-width: 1120px) {
-    flex-wrap: wrap;
-  }
-  &_items {
-    width: calc(40% - 8.5px);
-    @media (max-width: 1200px) {
-      width: calc(43% - 8.5px);
-    }
+#dashboard {
+  .my_record {
+    margin-top: 29px;
     @media (max-width: 1120px) {
-      width: 100%;
+      flex-wrap: wrap;
     }
-  }
-  &_tab {
-    padding: 25px;
-    background: #fff;
-    border-radius: 20px;
-    &_btns {
-      border-radius: 20px;
-      background: #edeef9;
-      a {
-        width: 100%;
-        padding: 21px;
-        border-radius: 20px;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: normal;
-        display: block;
-        text-decoration: none;
-        color: #1c2258;
-        text-align: center;
-        &.active {
-          background: #1c2258;
-          color: #fff;
-          font-style: normal;
-          font-weight: 600;
-          line-height: normal;
-        }
-      }
-    }
-    &_header {
-      display: flex;
-      gap: 25px;
-      margin-top: 35px;
+    &_items {
+      width: calc(40% - 8.5px);
       @media (max-width: 1200px) {
-        gap: 15px;
+        width: calc(43% - 8.5px);
       }
-      li {
-        flex: 1;
-        list-style: none;
+      @media (max-width: 1120px) {
+        width: 100%;
+      }
+    }
+    &_tab {
+      padding: 25px;
+      background: #fff;
+      border-radius: 20px;
+      &_btns {
+        border-radius: 20px;
+        background: #edeef9;
         a {
-          display: block;
           width: 100%;
-          color: #1c2258;
+          padding: 21px;
+          border-radius: 20px;
           font-size: 18px;
-          font-style: normal;
           font-weight: 400;
           line-height: normal;
+          display: block;
           text-decoration: none;
+          color: #1c2258;
           text-align: center;
-          position: relative;
-          padding-bottom: 10px;
           &.active {
-            color: #ad272b;
-            font-size: 18px;
+            background: #1c2258;
+            color: #fff;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
-            &::after {
-              content: "";
-              width: 100%;
-              height: 3px;
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              background: #ad272b;
+          }
+        }
+      }
+      &_header {
+        display: flex;
+        gap: 25px;
+        margin-top: 35px;
+        @media (max-width: 1200px) {
+          gap: 15px;
+        }
+        li {
+          flex: 1;
+          list-style: none;
+          a {
+            display: block;
+            width: 100%;
+            color: #1c2258;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            padding-bottom: 10px;
+            &.active {
+              color: #ad272b;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              &::after {
+                content: "";
+                width: 100%;
+                height: 3px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: #ad272b;
+              }
             }
           }
         }
       }
     }
-  }
-  .my_record_tab_content {
-    margin-top: 17px;
-    .tab_content_items {
-      gap: 17px;
-    }
-    .tab_content_item {
-      padding: 25px;
-      background: #fff;
-      border-radius: 20px;
-      &.is_hover {
-        transition: all 0.2s linear;
-        border: 1px solid transparent;
-        &:hover {
-          border: 1px solid #9093ae;
+    .my_record_tab_content {
+      margin-top: 17px;
+      .tab_content_items {
+        gap: 17px;
+      }
+      .tab_content_item {
+        padding: 25px;
+        background: #fff;
+        border-radius: 20px;
+        &.is_hover {
+          transition: all 0.2s linear;
+          border: 1px solid transparent;
+          &:hover {
+            border: 1px solid #9093ae;
+          }
+        }
+        &_top {
+          gap: 22px;
+          @media (max-width: 768px) {
+            gap: 15px;
+          }
+          img {
+            width: 79px;
+            height: 79px;
+            border-radius: 50%;
+          }
+          .my_record_profile_name {
+            color: #1c2258;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 114.909%;
+            @media (max-width: 1400px) {
+              font-size: 17px;
+            }
+            @media (max-width: 1200px) {
+              font-size: 16px;
+            }
+          }
+          .my_record_profile_price {
+            color: #ad272b;
+            text-align: right;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 114.909%;
+          }
+          .my_record_profile_status {
+            color: #1c2258;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 16px;
+            display: block;
+          }
+        }
+        .my_record_profile_information_lists {
+          gap: 18px;
+          margin-top: 40px;
         }
       }
+    }
+
+    &_profile {
+      padding: 25px;
+      border-radius: 20px;
+      background: #fff;
+      width: calc(60% - 8.5px);
+      height: fit-content;
+      @media (max-width: 1200px) {
+        width: calc(57% - 8.5px);
+      }
+      @media (max-width: 1120px) {
+        width: 100%;
+        margin-top: 27px;
+      }
+      @media (max-width: 768px) {
+        padding: 25px;
+      }
       &_top {
-        gap: 22px;
+        gap: 24px;
         @media (max-width: 768px) {
           gap: 15px;
         }
         img {
-          width: 79px;
-          height: 79px;
+          width: 149px;
+          height: 149px;
           border-radius: 50%;
-        }
-        .my_record_profile_name {
-          color: #1c2258;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 600;
-          line-height: 114.909%;
-          @media (max-width: 1400px) {
-            font-size: 17px;
-          }
           @media (max-width: 1200px) {
-            font-size: 16px;
+            width: 100px;
+            height: 100px;
           }
-        }
-        .my_record_profile_price {
-          color: #ad272b;
-          text-align: right;
-          font-family: Montserrat;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 800;
-          line-height: 114.909%;
-        }
-        .my_record_profile_status {
-          color: #1c2258;
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          margin-top: 16px;
-          display: block;
-        }
-      }
-      .my_record_profile_information_lists {
-        gap: 18px;
-        margin-top: 40px;
-      }
-    }
-  }
-
-  &_profile {
-    padding: 25px;
-    border-radius: 20px;
-    background: #fff;
-    width: calc(60% - 8.5px);
-    height: fit-content;
-    @media (max-width: 1200px) {
-      width: calc(57% - 8.5px);
-    }
-    @media (max-width: 1120px) {
-      width: 100%;
-      margin-top: 27px;
-    }
-    @media (max-width: 768px) {
-      padding: 25px;
-    }
-    &_top {
-      gap: 24px;
-      @media (max-width: 768px) {
-        gap: 15px;
-      }
-      img {
-        width: 149px;
-        height: 149px;
-        border-radius: 50%;
-        @media (max-width: 1200px) {
-          width: 100px;
-          height: 100px;
-        }
-        @media (max-width: 768px) {
-          width: 79px;
-          height: 79px;
-        }
-      }
-    }
-    &_name {
-      color: #1c2258;
-      font-size: 32px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 114.909%;
-      @media (max-width: 1200px) {
-        font-size: 20px;
-      }
-      @media (max-width: 768px) {
-        font-size: 16px;
-      }
-    }
-    &_status {
-      color: #1c2258;
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      margin-top: 17px;
-      display: block;
-    }
-    &_information {
-      gap: 84px;
-      margin-top: 32px;
-      @media (max-width: 768px) {
-        gap: 40px;
-      }
-      &_lists {
-        gap: 21px;
-        list-style: none;
-        @media (max-width: 768px) {
-          gap: 16px;
-        }
-        &.my_list {
-          gap: 5px !important;
-        }
-        li {
-          gap: 20px;
-          color: #1c2258;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
           @media (max-width: 768px) {
-            font-size: 14px;
-            gap: 14px;
-          }
-          .opacity {
-            color: #9093ae;
-          }
-
-          img {
-            width: 19px;
+            width: 79px;
+            height: 79px;
           }
         }
       }
-    }
-    .sums_info_content {
-      gap: 25px;
-      div {
-        gap: 17px;
+      &_name {
         color: #1c2258;
-        font-size: 16px;
+        font-size: 32px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
+        line-height: 114.909%;
+        @media (max-width: 1200px) {
+          font-size: 20px;
+        }
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
+      }
+      &_status {
+        color: #1c2258;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
         line-height: normal;
-        span {
-          color: #ad272b;
+        margin-top: 17px;
+        display: block;
+      }
+      &_information {
+        gap: 84px;
+        margin-top: 32px;
+        @media (max-width: 768px) {
+          gap: 40px;
+        }
+        &_lists {
+          gap: 21px;
+          list-style: none;
+          @media (max-width: 768px) {
+            gap: 16px;
+          }
+          &.my_list {
+            gap: 5px !important;
+          }
+          li {
+            gap: 20px;
+            color: #1c2258;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @media (max-width: 768px) {
+              font-size: 14px;
+              gap: 14px;
+            }
+            .opacity {
+              color: #9093ae;
+            }
+
+            img {
+              width: 19px;
+            }
+          }
+        }
+      }
+      .sums_info_content {
+        gap: 25px;
+        div {
+          gap: 17px;
+          color: #1c2258;
           font-size: 16px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
+          span {
+            color: #ad272b;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
         }
       }
-    }
-    .button {
-      @media (max-width: 768px) {
-        font-size: 14px;
-        padding: 22px 14px;
-        span {
+      .button {
+        @media (max-width: 768px) {
           font-size: 14px;
+          padding: 22px 14px;
+          span {
+            font-size: 14px;
+          }
         }
       }
     }

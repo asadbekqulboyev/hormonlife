@@ -10,6 +10,7 @@
 @import "online_priem";
 @import "online_priem_chat";
 @import "modal";
+@import "registration";
 * {
   margin: 0;
   padding: 0;
@@ -25,234 +26,235 @@ body {
   background: #f1f1f5 url("../images/bg.png") center/cover no-repeat;
   background-size: 100% 100%;
 }
-.container {
-  max-width: 1444px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.flex {
-  display: flex;
-
-  &.between {
-    justify-content: space-between;
-  }
-
-  &.center {
-    justify-content: center;
-  }
-
-  &.end {
-    justify-content: flex-end;
-  }
-
-  &.start {
-    justify-content: flex-start;
-  }
-
-  &.column {
-    flex-direction: column;
-  }
-
-  &.a_center {
-    align-items: center;
-  }
-
-  &.a_start {
-    align-items: flex-start;
-  }
-
-  &.a_end {
-    align-items: flex-end;
-  }
-  &.wrap {
-    flex-wrap: wrap;
-  }
-}
-.breadcrumbs {
-  font-family: "Raleway";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  display: flex;
-  align-items: center;
-  gap: 17px;
-  list-style: none;
-  img {
-    margin-left: 5px;
-  }
-  a {
-    color: #9093ae;
-    text-decoration: none;
-    &.active {
-      color: #1c2258;
-    }
-  }
-}
-main {
-  padding-top: 55px;
-  padding-bottom: 80px;
-  @media (max-width: 768px) {
-    padding-top: 25px;
-  }
+#dashboard {
   .container {
-    @media (max-width: 768px) {
+    max-width: 1444px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .flex {
+    display: flex;
+
+    &.between {
+      justify-content: space-between;
+    }
+
+    &.center {
+      justify-content: center;
+    }
+
+    &.end {
+      justify-content: flex-end;
+    }
+
+    &.start {
+      justify-content: flex-start;
+    }
+
+    &.column {
       flex-direction: column;
-      gap: 32px;
+    }
+
+    &.a_center {
+      align-items: center;
+    }
+
+    &.a_start {
+      align-items: flex-start;
+    }
+
+    &.a_end {
+      align-items: flex-end;
+    }
+    &.wrap {
+      flex-wrap: wrap;
     }
   }
-}
-.button {
-  border: none;
-  color: #fff;
-  text-align: center;
-  font-family: "Raleway";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-decoration: none;
-  cursor: pointer;
-  gap: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 33px 91px;
-  width: 100%;
-  border-radius: 25px;
-  background: #ad272b;
-  outline: none;
-  transition: all 0.3s linear;
-  &:hover {
-    background: #ff0000;
-    opacity: 0.8;
+  .breadcrumbs {
+    font-family: "Raleway";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    list-style: none;
+    img {
+      margin-left: 5px;
+    }
+    a {
+      color: #9093ae;
+      text-decoration: none;
+      &.active {
+        color: #1c2258;
+      }
+    }
   }
-  &.blues {
-    border-radius: 15px;
-    background: rgba(28, 34, 88, 0.13);
-    color: #1c2258;
+  main {
+    padding-top: 55px;
+    padding-bottom: 80px;
+    @media (max-width: 768px) {
+      padding-top: 25px;
+    }
+    .container {
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 32px;
+      }
+    }
+  }
+  .button {
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 33px 91px;
+    width: 100%;
+    border-radius: 25px;
+    background: #ad272b;
+    outline: none;
     transition: all 0.3s linear;
     &:hover {
-      background: #1c2258;
-      color: #fff;
-      opacity: 0 !important;
+      background: #ff0000;
+      opacity: 0.8;
+    }
+    &.blues {
+      border-radius: 15px;
+      background: rgba(28, 34, 88, 0.13);
+      color: #1c2258;
+      transition: all 0.3s linear;
+      &:hover {
+        background: #1c2258;
+        color: #fff;
+        opacity: 0 !important;
+      }
+    }
+    @media (max-width: 556px) {
+      padding: 33px 35px;
+      font-size: 17px;
+      font-weight: 600;
     }
   }
-  @media (max-width: 556px) {
-    padding: 33px 35px;
-    font-size: 17px;
-    font-weight: 600;
-  }
-}
 
-.section_title {
-  color: #1c2258;
-  font-family: "Raleway";
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  &.sm {
-    font-size: 32px;
+  .section_title {
+    color: #1c2258;
+    font-family: "Raleway";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    &.sm {
+      font-size: 32px;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
     @media (max-width: 768px) {
-      font-size: 20px;
+      font-size: 26px;
     }
   }
-  @media (max-width: 768px) {
-    font-size: 26px;
+  .contents {
+    width: calc(74% - 14.5px);
+    @media (max-width: 1200px) {
+      width: calc(70% - 14.5px);
+    }
+    @media (max-width: 992px) {
+      width: calc(60% - 14.5px);
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
-}
-.contents {
-  width: calc(74% - 14.5px);
-  @media (max-width: 1200px) {
-    width: calc(70% - 14.5px);
+  .sidebar {
+    width: calc(26% - 14.5px);
+    @media (max-width: 1200px) {
+      width: calc(30% - 14.5px);
+    }
+    @media (max-width: 992px) {
+      width: calc(40% - 14.5px);
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
-  @media (max-width: 992px) {
-    width: calc(60% - 14.5px);
-  }
-  @media (max-width: 768px) {
-    width: 100%;
-  }
-}
-.sidebar {
-  width: calc(26% - 14.5px);
-  @media (max-width: 1200px) {
-    width: calc(30% - 14.5px);
-  }
-  @media (max-width: 992px) {
-    width: calc(40% - 14.5px);
-  }
-  @media (max-width: 768px) {
-    width: 100%;
-  }
-}
-.custom_radio {
-  position: relative;
-  display: inline-block;
+  .custom_radio {
+    position: relative;
+    display: inline-block;
 
-  input {
-    display: none; // original radioknopkani yashiramiz
-  }
+    input {
+      display: none; // original radioknopkani yashiramiz
+    }
 
-  .check_dot {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #d9dcfa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: 0.3s;
-
-    &::after {
-      content: "";
-      width: 12px;
-      height: 12px;
+    .check_dot {
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
-      background: #fff;
+      background: #d9dcfa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
       transition: 0.3s;
+
+      &::after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #fff;
+        transition: 0.3s;
+      }
+    }
+
+    input:checked + .check_dot::after {
+      background: #1c2258;
     }
   }
+  // custom checkbox
+  .custom_checkbox {
+    position: relative;
+    display: inline-block;
 
-  input:checked + .check_dot::after {
-    background: #1c2258;
-  }
-}
-// custom checkbox
-.custom_checkbox {
-  position: relative;
-  display: inline-block;
-
-  input {
-    display: none; // asl checkboxni yashiramiz
-  }
-
-  .checkmark {
-    width: 26px;
-    height: 26px;
-    border-radius: 6.71px;
-    background: #c1c5f2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: 0.3s;
-
-    &::after {
-      content: "";
-      width: 10px;
-      height: 5px;
-      border-left: 3px solid transparent;
-      border-bottom: 3px solid transparent;
-      transform: rotate(-45deg);
-      transition: 0.3s;
+    input {
+      display: none; // asl checkboxni yashiramiz
     }
-  }
 
-  input:checked + .checkmark::after {
-    border-left-color: #1c2258;
-    border-bottom-color: #1c2258; // radio dot bilan bir xil rang
+    .checkmark {
+      width: 26px;
+      height: 26px;
+      border-radius: 6.71px;
+      background: #c1c5f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &::after {
+        content: "";
+        width: 10px;
+        height: 5px;
+        border-left: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        transform: rotate(-45deg);
+        transition: 0.3s;
+      }
+    }
+
+    input:checked + .checkmark::after {
+      border-left-color: #1c2258;
+      border-bottom-color: #1c2258; // radio dot bilan bir xil rang
+    }
   }
 }

@@ -256,4 +256,31 @@ $(document).ready(function () {
     const $parent = $(this).closest(".online_priem_form_item");
     $parent.addClass("active").find(".btn").addClass("active");
   });
+  // phone mask
+  $("input[type='tel']").inputmask("+7 (999) 999-99-99");
+});
+$(document).ready(function () {
+  $(".code_item").on("input", function () {
+    const $this = $(this);
+    const val = $this.val();
+
+    // Faqat 1 ta raqam qabul qiladi
+    if (val.length > 1) {
+      $this.val(val.slice(0, 1));
+    }
+
+    // Agar bitta raqam kiritilsa keyingisiga o'tadi
+    if (val.length === 1) {
+      $this.next(".code_item").focus();
+    }
+  });
+
+  $(".code_item").on("keydown", function (e) {
+    const $this = $(this);
+
+    // Agar Backspace bosilsa va input bo'sh bo‘lsa — oldingisiga qaytadi
+    if (e.key === "Backspace" && !$this.val()) {
+      $this.prev(".code_item").focus();
+    }
+  });
 });

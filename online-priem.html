@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="dashboard">
         <header class="header">
             <div class="container flex a_center between">
                 <a href="#" class="header_logo">
@@ -353,128 +353,129 @@
                     </div>
                 </div>
         </main>
-    </div>
-    <div class="modal">
-        <div class="modal_content">
-            <h3 class="modal_title">
-                Запись на онлайн-прием
-            </h3>
-            <div class="modal_exit">
-                <img src="assets/images/modal_exit.svg" alt="">
-            </div>
-            <div class="tab_content_item">
-                <div class="tab_content_item_top flex a_center">
-                    <img src="assets/images/user_logo.png" alt="">
-                    <div class="my_record_profile_info">
-                        <div class="my_record_profile_name">
-                            Третьякова Людмила Германновна
+        <div class="modal">
+            <div class="modal_content">
+                <h3 class="modal_title">
+                    Запись на онлайн-прием
+                </h3>
+                <div class="modal_exit">
+                    <img src="assets/images/modal_exit.svg" alt="">
+                </div>
+                <div class="tab_content_item">
+                    <div class="tab_content_item_top flex a_center">
+                        <img src="assets/images/user_logo.png" alt="">
+                        <div class="my_record_profile_info">
+                            <div class="my_record_profile_name">
+                                Третьякова Людмила Германновна
+                            </div>
+                            <span class="my_record_profile_status">
+                                Терапевт
+                            </span>
                         </div>
-                        <span class="my_record_profile_status">
-                            Терапевт
+                    </div>
+                    <ul class="my_record_profile_information_lists flex column">
+                        <li class="flex a_center"><img src="assets/images/profile_icon1.svg"
+                                alt="Аксёнов Артур Константинович"><span>Аксёнов Артур
+                                Константинович</span>
+                        </li>
+                        <li class="flex a_center"><img src="assets/images/profile_icon2.svg"
+                                alt="Приём (осмотр, консультация) врача-терапевта первичный"><span>Приём
+                                (осмотр, консультация) врача-терапевта первичный</span></li>
+                        <li class="flex a_center"><img src="assets/images/profile_icon3.svg"
+                                alt=""><span>13.03.2025</span>
+                        </li>
+                        <li class="flex a_center"><img src="assets/images/profile_icon4.svg " alt=""><span>Москва, ул.
+                                1905
+                                года,
+                                23, помещение 1 (левое крыльцо)</span></li>
+                    </ul>
+                </div>
+                <div class="schet_card flex between a_center">
+                    <div class="schet_card_left flex a_center ">
+                        <img src="assets/images/plastic.png" alt="">
+                        <div class="schet_card_left_info">
+                            <div class="schet_card_left_title">
+                                Ваш баланс:
+                            </div>
+                            <div class="schet_card_left_price">100 000 ₽</div>
+                        </div>
+                    </div>
+                    <div class="schet_card_right">
+                        <div class="schet_card_right">Недостаточно средств?</div>
+                        <a href="#" class="schet_card_right_balance">Пополнить баланс</a>
+                    </div>
+                </div>
+                <div class="modal_sums flex between a_center">
+                    <div class="modal_sums_left flex a_center">
+                        <img src="assets/images/sums_icon.svg" alt="">
+                        <span>Стоимость: </span>
+                    </div>
+                    <div class="modal_sums_right">
+                        1 500 ₽
+                    </div>
+
+                </div>
+                <button class="button order_hormone">Оплатить по счету Hormone life</button>
+            </div>
+            <div class="modal_content" id="modal_content2">
+                <h3 class="modal_title">
+                    Пополнение баланса
+                </h3>
+                <div class="modal_exit">
+                    <img src="assets/images/modal_exit.svg" alt="">
+                </div>
+                <div class="balance_topup-input flex column">
+                    <span class="balance_topup-input_title succes">Сумма</span>
+                    <div class="error flex a_center" style="display: none;">
+                        <img src="assets/images/inf.svg" alt="">
+                        <span>Минимальная сумма - 1000 руб.</span>
+                    </div>
+                    <input type="number" value="1000">
+                </div>
+                <div class="balance_payment flex a_end">
+                    <div class="left">
+                        <div class="balance_topup-title">Способ оплаты</div>
+                        <div class="balance_payment_radios flex column">
+                            <label class="flex a_center">
+                                <div class="custom_radio">
+                                    <input type="radio" name="pay" value="sbp">
+                                    <span class="check_dot"></span>
+                                </div>
+                                СБП
+                            </label>
+                            <label class="flex a_center">
+                                <div class="custom_radio">
+                                    <input type="radio" name="pay" value="card" checked="">
+                                    <span class="check_dot"></span>
+                                </div>
+                                Банковская карта
+                            </label>
+                        </div>
+                    </div>
+                    <div class="balance_payment-card flex a_center">
+                        <img src="assets/images/card_min.svg" alt="">
+                        <span>**** 7735</span>
+                    </div>
+                </div>
+                <button class="button order_hormone">Пополнить баланс</button>
+                <label class="modal_bottom_checkbox flex a_center">
+                    <div class="custom_checkbox">
+                        <input type="checkbox" name="checkbox_offerts" checked>
+                        <span class="checkmark">
                         </span>
                     </div>
-                </div>
-                <ul class="my_record_profile_information_lists flex column">
-                    <li class="flex a_center"><img src="assets/images/profile_icon1.svg"
-                            alt="Аксёнов Артур Константинович"><span>Аксёнов Артур
-                            Константинович</span>
-                    </li>
-                    <li class="flex a_center"><img src="assets/images/profile_icon2.svg"
-                            alt="Приём (осмотр, консультация) врача-терапевта первичный"><span>Приём
-                            (осмотр, консультация) врача-терапевта первичный</span></li>
-                    <li class="flex a_center"><img src="assets/images/profile_icon3.svg" alt=""><span>13.03.2025</span>
-                    </li>
-                    <li class="flex a_center"><img src="assets/images/profile_icon4.svg " alt=""><span>Москва, ул. 1905
-                            года,
-                            23, помещение 1 (левое крыльцо)</span></li>
-                </ul>
+                    <p>Я соглашаюсь <a href="#">с договором оферты</a><br>
+                        на пополнение баланса личного кабинета</a></p>
             </div>
-            <div class="schet_card flex between a_center">
-                <div class="schet_card_left flex a_center ">
-                    <img src="assets/images/plastic.png" alt="">
-                    <div class="schet_card_left_info">
-                        <div class="schet_card_left_title">
-                            Ваш баланс:
-                        </div>
-                        <div class="schet_card_left_price">100 000 ₽</div>
-                    </div>
+            <div class="modal_content flex a_center center column" id="modal_content3">
+                <div class="modal_exit">
+                    <img src="assets/images/modal_exit.svg" alt="">
                 </div>
-                <div class="schet_card_right">
-                    <div class="schet_card_right">Недостаточно средств?</div>
-                    <a href="#" class="schet_card_right_balance">Пополнить баланс</a>
-                </div>
+                <h2>Успешно!</h2>
+                <button class="button order_hormone"><img src="assets/images/modal_toright.svg" alt=""><span>Вернуться к
+                        оплате приема</span></button>
             </div>
-            <div class="modal_sums flex between a_center">
-                <div class="modal_sums_left flex a_center">
-                    <img src="assets/images/sums_icon.svg" alt="">
-                    <span>Стоимость: </span>
-                </div>
-                <div class="modal_sums_right">
-                    1 500 ₽
-                </div>
-
-            </div>
-            <button class="button order_hormone">Оплатить по счету Hormone life</button>
         </div>
-        <div class="modal_content" id="modal_content2">
-            <h3 class="modal_title">
-                Пополнение баланса
-            </h3>
-            <div class="modal_exit">
-                <img src="assets/images/modal_exit.svg" alt="">
-            </div>
-            <div class="balance_topup-input flex column">
-                <span class="balance_topup-input_title succes">Сумма</span>
-                <div class="error flex a_center" style="display: none;">
-                    <img src="assets/images/inf.svg" alt="">
-                    <span>Минимальная сумма - 1000 руб.</span>
-                </div>
-                <input type="number" value="1000">
-            </div>
-            <div class="balance_payment flex a_end">
-                <div class="left">
-                    <div class="balance_topup-title">Способ оплаты</div>
-                    <div class="balance_payment_radios flex column">
-                        <label class="flex a_center">
-                            <div class="custom_radio">
-                                <input type="radio" name="pay" value="sbp">
-                                <span class="check_dot"></span>
-                            </div>
-                            СБП
-                        </label>
-                        <label class="flex a_center">
-                            <div class="custom_radio">
-                                <input type="radio" name="pay" value="card" checked="">
-                                <span class="check_dot"></span>
-                            </div>
-                            Банковская карта
-                        </label>
-                    </div>
-                </div>
-                <div class="balance_payment-card flex a_center">
-                    <img src="assets/images/card_min.svg" alt="">
-                    <span>**** 7735</span>
-                </div>
-            </div>
-            <button class="button order_hormone">Пополнить баланс</button>
-            <label class="modal_bottom_checkbox flex a_center">
-                <div class="custom_checkbox">
-                    <input type="checkbox" name="checkbox_offerts" checked>
-                    <span class="checkmark">
-                    </span>
-                </div>
-                <p>Я соглашаюсь <a href="#">с договором оферты</a><br>
-                    на пополнение баланса личного кабинета</a></p>
-        </div>
-        <div class="modal_content flex a_center center column" id="modal_content3">
-            <div class="modal_exit">
-                <img src="assets/images/modal_exit.svg" alt="">
-            </div>
-            <h2>Успешно!</h2>
-            <button class="button order_hormone"><img src="assets/images/modal_toright.svg" alt=""><span>Вернуться к
-                    оплате приема</span></button>
-        </div>
-    </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>

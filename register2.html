@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper" id="dashboard">
+        <div class="registration">
+            <div class="container">
+                <a href="index.html" class="close">
+                    <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 1.55281L8.51275 0L0.412044 8.46284C0.281465 8.59844 0.177836 8.75969 0.107121 8.93732C0.0364052 9.11494 0 9.30542 0 9.4978C0 9.69018 0.0364052 9.88067 0.107121 10.0583C0.177836 10.2359 0.281465 10.3972 0.412044 10.5328L8.51275 19L9.9986 17.4472L2.39552 9.5L10 1.55281Z"
+                            fill="#1C2258" />
+                    </svg>
+                    <span>Вернуться назад</span>
+                </a>
+                <div class="registration_top">
+                    <img src="assets/images/registration_log.svg" alt="">
+                    <div class="section_title">Регистрация</div>
+                    <p>Заполните данные</p>
+                </div>
+                <form class="registration_form">
+                    <div class="registration_form_content flex between ">
+                        <label class="form_item">
+                            <span>Имя</span>
+                            <input type="text" class="form_item_input" name="firstname">
+                        </label>
+                        <label class="form_item">
+                            <span>Отчество</span>
+                            <input type="text" class="form_item_input" name="parentname">
+                        </label>
+                        <label class="form_item">
+                            <span>Пол</span>
+                            <div class="form_item_radios">
+                                <label class="flex a_center">
+                                    <div class="custom_radio">
+                                        <input type="radio" name="radio" checked>
+                                        <span class="check_dot"></span>
+                                    </div>
+                                    Мужской
+                                </label>
+                                <label class="flex a_center">
+                                    <div class="custom_radio">
+                                        <input type="radio" name="radio">
+                                        <span class="check_dot"></span>
+                                    </div>
+                                    Женский
+                                </label>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="registration_form_content second flex ">
+                        <label class="form_item">
+                            <span>Фамилия</span>
+                            <input type="text" class="form_item_input" name="lastname">
+                        </label>
+                        <label class="form_item">
+                            <span>Дата рождения</span>
+                            <input type="date" class="form_item_input" name="date" id="dates" placeholder="0000.00.00">
+                            <img src="assets/images/date_select.svg" alt="" class="date_select">
+                        </label>
+                    </div>
+                    <div class="registration_form bottom flex start">
+                        <label class="registration_form_phone flex column codes">
+                            <span class="phone_sm_title">Код отправлен на: +7 (000) 000-00-00 </span>
+                            <div class="code_items flex">
+                                <input class="code_item" type="number" name="code1" maxlength="1" max="1">
+                                <input class="code_item" type="number" name="code2" maxlength="1" max="1">
+                                <input class="code_item" type="number" name="code3" maxlength="1" max="1">
+                                <input class="code_item" type="number" name="code4" maxlength="1" max="1">
+                            </div>
+                            <span class="phone_sm_title minut">Получить новый код можно через 00:00</span>
+                        </label>
+                        <div class="left_btn">
+                            <button class="button">
+                                Отправить
+                            </button>
+                            <a href="#">Получить новый код</a>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.9/jquery.inputmask.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

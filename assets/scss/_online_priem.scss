@@ -1,173 +1,175 @@
-.online_priem_form {
-  padding: 25px;
-  border-radius: 20px;
-  background: #fff;
-  &_items {
-    gap: 10px;
-  }
-  &_content {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  &_item {
-    line-height: normal;
-    position: relative;
-    // flex: 0 0 auto;/
-    @media screen {
+#dashboard {
+  .online_priem_form {
+    padding: 25px;
+    border-radius: 20px;
+    background: #fff;
+    &_items {
+      gap: 10px;
     }
+    &_content {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    &_item {
+      line-height: normal;
+      position: relative;
+      // flex: 0 0 auto;/
+      @media screen {
+      }
 
-    .btn {
-      gap: 27px;
-      cursor: pointer;
-      padding: 18px 28px;
-      background: #edeef9;
-      color: #1c2258;
-      border-radius: 15px;
-      display: flex;
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 400;
-      justify-content: center;
-      text-align: center;
-    }
-    &:nth-child(3) {
-      &.active {
-        .btn {
-          color: #fff;
-          border: 1px solid #1c2258;
-          border-radius: 15px;
-        }
-        svg path {
-          fill: #1c2258;
-        }
-      }
-    }
-    &:first-child {
       .btn {
-        padding: 18px 20px 17px 14px;
+        gap: 27px;
+        cursor: pointer;
+        padding: 18px 28px;
+        background: #edeef9;
+        color: #1c2258;
+        border-radius: 15px;
+        display: flex;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        justify-content: center;
+        text-align: center;
       }
-    }
-    &:nth-child(4),
-    &:nth-child(5) {
-      .btn {
-        padding: 18px 59px;
+      &:nth-child(3) {
         &.active {
-          background: #ad272b;
-          color: #fff;
+          .btn {
+            color: #fff;
+            border: 1px solid #1c2258;
+            border-radius: 15px;
+          }
+          svg path {
+            fill: #1c2258;
+          }
         }
       }
-    }
-    &:nth-child(6) {
-      .btn {
-        padding: 18px 15px 17px;
-      }
-    }
-    &:last-child {
-      .btn {
-        padding: 18px 18px 17px;
-      }
-      &.active {
+      &:first-child {
         .btn {
-          border: 1px solid #1c2258;
-          border-radius: 15px;
-        }
-        svg path {
-          fill: #1c2258;
+          padding: 18px 20px 17px 14px;
         }
       }
-    }
-    input {
-      position: absolute;
-      opacity: 0;
-      visibility: hidden;
-    }
-    input:checked ~ .btn {
-      background: #1c2258;
-      color: #fff;
-    }
-    input:checked ~ .btn ~ svg {
-      fill: #fff;
-    }
-    &.active {
-      svg path {
-        // stroke: #fff;
+      &:nth-child(4),
+      &:nth-child(5) {
+        .btn {
+          padding: 18px 59px;
+          &.active {
+            background: #ad272b;
+            color: #fff;
+          }
+        }
+      }
+      &:nth-child(6) {
+        .btn {
+          padding: 18px 15px 17px;
+        }
+      }
+      &:last-child {
+        .btn {
+          padding: 18px 18px 17px;
+        }
+        &.active {
+          .btn {
+            border: 1px solid #1c2258;
+            border-radius: 15px;
+          }
+          svg path {
+            fill: #1c2258;
+          }
+        }
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+      }
+      input:checked ~ .btn {
+        background: #1c2258;
+        color: #fff;
+      }
+      input:checked ~ .btn ~ svg {
         fill: #fff;
       }
+      &.active {
+        svg path {
+          // stroke: #fff;
+          fill: #fff;
+        }
+      }
     }
-  }
-  .online_priem_searc {
-    margin-top: 16px;
-    position: relative;
-    input {
-      padding: 26px 45px 26px 23px;
-      color: #1c2258;
-      font-family: "Raleway";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-    }
-    button {
-      border: 0;
-      cursor: pointer;
-      outline: none;
-      position: absolute;
-      bottom: 22px;
-      right: 26px;
-      padding-left: 4px;
-      background: #edeef9;
-    }
+    .online_priem_searc {
+      margin-top: 16px;
+      position: relative;
+      input {
+        padding: 26px 45px 26px 23px;
+        color: #1c2258;
+        font-family: "Raleway";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      button {
+        border: 0;
+        cursor: pointer;
+        outline: none;
+        position: absolute;
+        bottom: 22px;
+        right: 26px;
+        padding-left: 4px;
+        background: #edeef9;
+      }
 
-    // img {
-    //   position: absolute;
-    //   bottom: 22px;
-    //   right: 26px;
-    //   padding-left: 4px;
-    //   background: #edeef9;
+      // img {
+      //   position: absolute;
+      //   bottom: 22px;
+      //   right: 26px;
+      //   padding-left: 4px;
+      //   background: #edeef9;
+      // }
+    }
+    // .radios2 {
+    //   margin-top: 10px;
+    //   .online_priem_form_item {
+    //     width: calc(50% - 5px);
+    //     text-align: center;
+
+    //     input:checked ~ .btn {
+    //       background: #ad272b;
+    //     }
+    //     .btn {
+    //       align-items: center;
+    //       gap: 25px;
+    //       width: 100%;
+
+    //       display: block;
+    //     }
+    //   }
+    // }
+    // .radios3 {
+    //   margin-top: 10px;
+    //   .online_priem_form_item {
+    //     width: auto;
+    //     text-align: center;
+    //     .btn {
+    //       align-items: center;
+    //       gap: 25px;
+    //       max-width: 100%;
+    //     }
+    //     .btn:last-child {
+    //       flex: 0 0 auto;
+    //       width: max-content;
+    //     }
+    //     &.active {
+    //       .btn {
+    //         background: #edeef9;
+    //         border: 1px solid #1c2258;
+    //         color: #1c2258;
+    //       }
+    //       svg path {
+    //         fill: #1c2258;
+    //       }
+    //     }
+    //   }
     // }
   }
-  // .radios2 {
-  //   margin-top: 10px;
-  //   .online_priem_form_item {
-  //     width: calc(50% - 5px);
-  //     text-align: center;
-
-  //     input:checked ~ .btn {
-  //       background: #ad272b;
-  //     }
-  //     .btn {
-  //       align-items: center;
-  //       gap: 25px;
-  //       width: 100%;
-
-  //       display: block;
-  //     }
-  //   }
-  // }
-  // .radios3 {
-  //   margin-top: 10px;
-  //   .online_priem_form_item {
-  //     width: auto;
-  //     text-align: center;
-  //     .btn {
-  //       align-items: center;
-  //       gap: 25px;
-  //       max-width: 100%;
-  //     }
-  //     .btn:last-child {
-  //       flex: 0 0 auto;
-  //       width: max-content;
-  //     }
-  //     &.active {
-  //       .btn {
-  //         background: #edeef9;
-  //         border: 1px solid #1c2258;
-  //         color: #1c2258;
-  //       }
-  //       svg path {
-  //         fill: #1c2258;
-  //       }
-  //     }
-  //   }
-  // }
 }

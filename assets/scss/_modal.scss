@@ -1,301 +1,301 @@
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100dvh;
-  background: #0000006a;
-  backdrop-filter: blur(10px);
-  z-index: 11;
-  display: none;
-  padding: 200px 15px 0;
+#dashboard {
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background: #0000006a;
+    backdrop-filter: blur(10px);
+    z-index: 11;
+    display: none;
+    padding: 200px 15px 0;
 
-  .tab_content_item {
-    padding: 25px;
-    background: #fff;
-    border-radius: 20px;
-    border: 1px solid #9093ae;
-    margin-top: 40px;
-    &.is_hover {
-      transition: all 0.2s linear;
-      border: 1px solid transparent;
-      &:hover {
-        border: 1px solid #9093ae;
-      }
-    }
-    &_top {
-      gap: 22px;
-      @media (max-width: 768px) {
-        gap: 15px;
-      }
-      img {
-        width: 79px;
-        height: 79px;
-        border-radius: 50%;
-      }
-      .my_record_profile_name {
-        color: #1c2258;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 114.909%;
-        @media (max-width: 1400px) {
-          font-size: 17px;
-        }
-        @media (max-width: 1200px) {
-          font-size: 16px;
-        }
-      }
-      .my_record_profile_price {
-        color: #ad272b;
-        text-align: right;
-        font-family: Montserrat;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 114.909%;
-      }
-      .my_record_profile_status {
-        color: #1c2258;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-top: 16px;
-        display: block;
-      }
-    }
-    .my_record_profile_information_lists {
-      gap: 18px;
-      margin-top: 40px;
-    }
-  }
-  &_exit {
-    cursor: pointer;
-    position: absolute;
-    right: 28px;
-    top: 35px;
-    background: #fff;
-    border-radius: 50%;
-  }
-  &_content {
-    border-radius: 30px;
-    background: #fff;
-    padding: 38px 43px 37px;
-    max-width: 647px;
-    margin: auto 0;
-    position: absolute;
-    height: fit-content;
-    max-height: calc(100dvh - 100px);
-    inset: 0;
-    overflow-y: auto;
-    margin: auto;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    @media (max-width: 768px) {
-      padding: 30px 20px;
-      width: calc(100% - 30px);
-    }
-    .schet_card {
-      padding: 15px 19px 18px 19px;
+    .tab_content_item {
+      padding: 25px;
+      background: #fff;
       border-radius: 20px;
-      background: #f9eeee;
-      margin-top: 14px;
-      @media (max-width: 556px) {
-        flex-direction: column;
-        align-items: flex-start !important;
-        gap: 14px;
-      }
-      &_left {
-        gap: 20px;
-        &_title {
-          color: #1c2258;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
+      border: 1px solid #9093ae;
+      margin-top: 40px;
+      &.is_hover {
+        transition: all 0.2s linear;
+        border: 1px solid transparent;
+        &:hover {
+          border: 1px solid #9093ae;
         }
-
-        &_price {
+      }
+      &_top {
+        gap: 22px;
+        @media (max-width: 768px) {
+          gap: 15px;
+        }
+        img {
+          width: 79px;
+          height: 79px;
+          border-radius: 50%;
+        }
+        .my_record_profile_name {
           color: #1c2258;
           font-size: 20px;
           font-style: normal;
           font-weight: 600;
-          margin-top: 7px;
-          line-height: normal;
+          line-height: 114.909%;
+          @media (max-width: 1400px) {
+            font-size: 17px;
+          }
+          @media (max-width: 1200px) {
+            font-size: 16px;
+          }
         }
-      }
-      &_right {
-        &_title {
+        .my_record_profile_price {
           color: #ad272b;
           text-align: right;
-          font-size: 14px;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 114.909%;
+        }
+        .my_record_profile_status {
+          color: #1c2258;
+          font-size: 15px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
-          @media (max-width: 556px) {
-            text-align: left;
-          }
-        }
-        &_balance {
-          color: #ad272b;
-          text-align: right;
-          width: 100%;
+          margin-top: 16px;
           display: block;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 600;
-          line-height: normal;
-          text-decoration: underline;
-          margin-top: 7px;
-          @media (max-width: 556px) {
-            text-align: left;
-          }
         }
       }
-      img {
-        width: 107px;
-        height: 70.801px;
+      .my_record_profile_information_lists {
+        gap: 18px;
+        margin-top: 40px;
       }
     }
-  }
-  &_title {
-    color: #1c2258;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    @media (max-width: 768px) {
-      font-size: 26px;
+    &_exit {
+      cursor: pointer;
+      position: absolute;
+      right: 28px;
+      top: 35px;
+      background: #fff;
+      border-radius: 50%;
     }
-  }
-  &_sums {
-    color: #1c2258;
-    font-size: 26.899px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: 22px;
-    &_left {
-      gap: 28px;
+    &_content {
+      border-radius: 30px;
+      background: #fff;
+      padding: 38px 43px 37px;
+      max-width: 647px;
+      margin: auto 0;
+      position: absolute;
+      height: fit-content;
+      max-height: calc(100dvh - 100px);
+      inset: 0;
+      overflow-y: auto;
+      margin: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      @media (max-width: 768px) {
+        padding: 30px 20px;
+        width: calc(100% - 30px);
+      }
+      .schet_card {
+        padding: 15px 19px 18px 19px;
+        border-radius: 20px;
+        background: #f9eeee;
+        margin-top: 14px;
+        @media (max-width: 556px) {
+          flex-direction: column;
+          align-items: flex-start !important;
+          gap: 14px;
+        }
+        &_left {
+          gap: 20px;
+          &_title {
+            color: #1c2258;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+
+          &_price {
+            color: #1c2258;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            margin-top: 7px;
+            line-height: normal;
+          }
+        }
+        &_right {
+          &_title {
+            color: #ad272b;
+            text-align: right;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            @media (max-width: 556px) {
+              text-align: left;
+            }
+          }
+          &_balance {
+            color: #ad272b;
+            text-align: right;
+            width: 100%;
+            display: block;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-decoration: underline;
+            margin-top: 7px;
+            @media (max-width: 556px) {
+              text-align: left;
+            }
+          }
+        }
+        img {
+          width: 107px;
+          height: 70.801px;
+        }
+      }
     }
-    &_right {
+    &_title {
+      color: #1c2258;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      @media (max-width: 768px) {
+        font-size: 26px;
+      }
+    }
+    &_sums {
       color: #1c2258;
       font-size: 26.899px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
       line-height: normal;
-    }
-  }
-  .order_hormone {
-    margin-top: 40px;
-    @media (max-width: 556px) {
-      padding: 27px 30px;
-    }
-  }
-  .balance_topup-input {
-    margin-top: 40px;
-    input {
-      padding: 28px 26px 25px;
-    }
-  }
-  .balance_payment {
-    gap: 29px;
-    padding: 0;
-    background: transparent;
-    border-radius: 0;
-    max-width: 100%;
-    width: 100%;
-    margin-top: 52px;
-  }
-  &_bottom_checkbox {
-    gap: 13px;
-    color: #1c2258;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 31px;
-    a {
-      color: #1c2258;
-      text-decoration: underline;
-    }
-  }
-  #modal_content3 {
-    h2 {
-      color: #1c2258;
-      font-family: "Raleway";
-      font-size: 48px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      text-align: center;
-      padding-top: 240px;
-    }
-  }
-  &_chat_content {
-    border-radius: 35px;
-    background: #fff;
-    max-width: 1239px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    max-height: calc(100dvh - 230px);
-    @media (max-width: 768px) {
-      flex-direction: column;
-      height: fit-content;
-      max-height: calc(100dvh - 30px);
-      border-radius: 8px;
-    }
-    .select_appanent {
-      gap: 52px;
-      width: 50%;
-      background: #fff;
-      padding: 203px 0 237px;
-      color: #1c2258;
-      text-align: center;
-      font-family: "Raleway";
-      font-size: 22px;
-      font-style: normal;
-      text-decoration: none;
-      font-weight: 700;
-      line-height: normal;
-      padding-left: 133px;
-      padding-right: 133px;
-      @media (max-width: 1200px) {
-        padding-left: 80px;
-        padding-right: 80px;
+      margin-top: 22px;
+      &_left {
+        gap: 28px;
       }
-      @media (max-width: 1024px) {
-        padding-left: 30px;
-        padding-right: 30px;
-      }
-      @media (max-width: 992px) {
-        font-size: 18px;
-      }
-      @media (max-width: 768px) {
-        width: 100%;
+      &_right {
         color: #1c2258;
-        height: 50%;
-        font-size: 20px;
-        padding: 34px 15px 37px;
-        gap: 27px;
+        font-size: 26.899px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
       }
-      img {
-        @media (max-width: 768px) {
-          width: 90px;
+    }
+    .order_hormone {
+      margin-top: 40px;
+      @media (max-width: 556px) {
+        padding: 27px 30px;
+      }
+    }
+    .balance_topup-input {
+      margin-top: 40px;
+      input {
+        padding: 28px 26px 25px;
+      }
+    }
+    .balance_payment {
+      gap: 29px;
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      max-width: 100%;
+      width: 100%;
+      margin-top: 52px;
+    }
+    &_bottom_checkbox {
+      gap: 13px;
+      color: #1c2258;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 31px;
+      a {
+        color: #1c2258;
+        text-decoration: underline;
+      }
+    }
+    #modal_content3 {
+      h2 {
+        color: #1c2258;
+        font-family: "Raleway";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        padding-top: 240px;
+      }
+    }
+    &_chat_content {
+      border-radius: 35px;
+      background: #fff;
+      max-width: 1239px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      max-height: calc(100dvh - 230px);
+      @media (max-width: 768px) {
+        flex-direction: column;
+        height: fit-content;
+        max-height: calc(100dvh - 30px);
+        border-radius: 8px;
+      }
+      .select_appanent {
+        gap: 52px;
+        width: 50%;
+        background: #fff;
+        padding: 203px 0 237px;
+        color: #1c2258;
+        text-align: center;
+        font-family: "Raleway";
+        font-size: 22px;
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: normal;
+        padding-left: 133px;
+        padding-right: 133px;
+        @media (max-width: 1200px) {
+          padding-left: 80px;
+          padding-right: 80px;
         }
-      }
-      &:last-child {
-        background: #fbf3f3;
+        @media (max-width: 1024px) {
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        @media (max-width: 992px) {
+          font-size: 18px;
+        }
         @media (max-width: 768px) {
-          padding: 34px 0 37px;
+          width: 100%;
+          color: #1c2258;
           height: 50%;
+          font-size: 20px;
+          padding: 34px 15px 37px;
+          gap: 27px;
+        }
+        img {
+          @media (max-width: 768px) {
+            width: 90px;
+          }
+        }
+        &:last-child {
+          background: #fbf3f3;
+          @media (max-width: 768px) {
+            padding: 34px 0 37px;
+            height: 50%;
+          }
         }
       }
     }
   }
-
- 
 }
